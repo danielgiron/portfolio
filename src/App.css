@@ -1,0 +1,55 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url("https://source.unsplash.com/collection/1424340"); */
+  background-size: cover;
+}
+
+.Home {
+  width: 400px;
+  height: 400px;
+  border: 1px solid grey;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home .imgContainer {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #eee;
+
+  /* background: conic-gradient(
+    #b9aa85 9.7%,
+    #a25d45 13.8%,
+    #6e231e 22.2%,
+    #020b0b 37.5%,
+    #2c657f 55.5%,
+    #e9decc 70.88%,
+    #e4be92 75%,
+    #e4be92 76.4%,
+    #070f0d 77.7%,
+    #081312 87.5%,
+    #46999f 90.2%,
+    #dbd8d2 97.2%
+  ); */
+
+  background: conic-gradient(
+    #dbd8d2 0deg,
+    #b9aa85 35deg,
+    #a25d45 50deg,
+    #6e231e 80deg,
+    #020b0b 135deg,
+    #2c657f 200deg,
+    #e9decc 255deg,
+    #e4be92 270deg,
+    #94221c 275deg,
+    #070f0d 280deg,
+    #070f0d 290deg,
+    #46999f 325deg,
+    #dbd8d2 350deg
+  );
+  border-radius: 100%;
+}
