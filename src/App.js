@@ -1,22 +1,16 @@
 import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
 // import axios from "axios";
 import Interface from "./Interface";
-import Home from "./Home";
-import About from "./About";
-import Contact from "./Contact";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Projects from "./Pages/Projects";
+import ThreeJS from "./ThreeJS/ThreeJS";
 
 import "./App.css";
 import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    // async function getBackground() {
-    //   const res = await axios.get()
-    // }
-    // const unsplashRes = null;
-    const unsplashURL = "https://source.unsplash.com/collection/1424340";
-  }, []);
-
   return (
     <div className="App" id="App">
       <Routes>
@@ -24,8 +18,11 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
         </Route>
       </Routes>
+
+      <ThreeJS />
     </div>
   );
 }

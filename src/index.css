@@ -34,6 +34,23 @@ code {
   src: url(./fonts/Furrow-Oblique.woff2) format("woff2");
 }
 
+@font-face {
+  font-family: "Sono100";
+  src: url(./fonts/Sono-100.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Sono400";
+  src: url(./fonts/Sono-400.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Sono700";
+  src: url(./fonts/Sono-700.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Southpaw";
+  src: url(./fonts/southpaw-webfont.woff) format("woff");
+}
+
 /*/////////////////////////////////////////////////////////////////////////////// CSS RESET */
 /***
     The new CSS reset - version 1.7.3 (last updated 7.8.2022)

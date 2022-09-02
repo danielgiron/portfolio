@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 
 function Contact(props) {
   return (
-    <div className="Contact">
+    <div className="Contact Page">
       <h1>Contact</h1>
     </div>
   );

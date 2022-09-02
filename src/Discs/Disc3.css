@@ -1,0 +1,83 @@
+.Disc3Container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: rgb(31, 31, 31); */
+}
+
+.Disc3 {
+  position: absolute;
+  /* width: calc(100% - 40px);
+  height: calc(100% - 40px); */
+  border: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background: conic-gradient(
+    #e3f0f2 0deg,
+    /* #b9aa85 35deg, */ #b75d39 50deg,
+    #771e18 80deg,
+    #020b0b 135deg,
+    #2c657f 200deg,
+    /* #e9decc 255deg,
+    #f5d0a5 270deg, */ #bd241b 275deg,
+    #070f0d 280deg,
+    #070f0d 290deg,
+    #369ea5 325deg,
+    #e3f0f2 350deg
+  );
+
+  mix-blend-mode: color-dodge;
+  opacity: 0.8;
+  filter: hue-rotate(-10deg);
+  border-radius: 100%;
+}
+
+#d3_1 {
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
+  animation: swivel 60s linear 0s infinite;
+}
+#d3_2 {
+  width: calc(87.5% - 0px);
+  height: calc(87.5% - 0px);
+  animation: swivel 40s linear 0s infinite;
+}
+#d3_3 {
+  width: calc(75% - 0px);
+  height: calc(75% - 0px);
+  animation: swivel 30s linear 0s infinite;
+}
+#d3_4 {
+  width: calc(62.5% - 0px);
+  height: calc(62.5% - 0px);
+  animation: swivel 25s linear 0s infinite;
+}
+#d3_5 {
+  width: calc(50% - 0px);
+  height: calc(50% - 0px);
+  animation: swivel 20s linear 0s infinite;
+}
+#d3_6 {
+  width: calc(37.5% - 0px);
+  height: calc(37.5% - 0px);
+  animation: swivel 15s linear 0s infinite;
+}
+
+@keyframes swivel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
