@@ -14,7 +14,7 @@ function ThreeJS(props) {
     const MAX_POS_X = 10;
     const MIN_POS_Y = -8;
     const MAX_POS_Y = 8;
-    const MIN_POS_Z = -3;
+    const MIN_POS_Z = -5;
     const MAX_POS_Z = 3;
 
     useFrame(() => {
@@ -64,7 +64,7 @@ function ThreeJS(props) {
     >
       <ambientLight intensity={0.5} />
       <pointLight position={[10, 10, 10]} />
-      <Sphere position={[-6, 6, 0]} color="salmon" size={2} speed={1} />
+      <Sphere position={[-6, 6, 0]} color="white" size={2} speed={1} />
       <Sphere position={[6, -6, 0]} color="teal" size={2} speed={2} />
       <Sphere position={[0, 0, 2]} color="orange" size={3} speed={3} />
     </Canvas>

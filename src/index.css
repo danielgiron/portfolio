@@ -35,20 +35,17 @@ code {
 }
 
 @font-face {
-  font-family: "Sono100";
-  src: url(./fonts/Sono-100.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Sono400";
-  src: url(./fonts/Sono-400.woff2) format("woff2");
-}
-@font-face {
-  font-family: "Sono700";
-  src: url(./fonts/Sono-700.woff2) format("woff2");
-}
-@font-face {
   font-family: "Southpaw";
   src: url(./fonts/southpaw-webfont.woff) format("woff");
+}
+
+@font-face {
+  font-family: "LeagueSpartanLight";
+  src: url(./fonts/LeagueSpartan-Light.woff2) format("woff2");
+}
+@font-face {
+  font-family: "LeagueSpartanMedium";
+  src: url(./fonts/LeagueSpartan-Medium.woff2) format("woff2");
 }
 
 /*/////////////////////////////////////////////////////////////////////////////// CSS RESET */
