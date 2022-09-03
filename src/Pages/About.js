@@ -8,7 +8,7 @@ function About(props) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 0.5 }}
     >
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
