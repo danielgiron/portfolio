@@ -1,11 +1,11 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 
-function Header(props) {
+function Hero(props) {
   const location = useLocation();
   const navigate = useNavigate();
   return (
-    <header className="Header">
+    <div className="Hero">
       <div className="TitleCard">
         <div className="Title">Baldwin Giron</div>
         <div className="Subtitle">Full Stack Developer</div>
@@ -45,7 +45,8 @@ function Header(props) {
           Contact
         </button>
       </nav>
-    </header>
+      {props.outlet}
+    </div>
   );
 }
-export default Header;
+export default Hero;

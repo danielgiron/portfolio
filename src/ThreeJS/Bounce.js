@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 
-function ThreeJS(props) {
+function Bounce(props) {
   function Sphere(props) {
     const mesh = useRef(null);
     const { size, color, position, speed } = props;
@@ -54,6 +54,16 @@ function ThreeJS(props) {
       <mesh ref={mesh} position={position}>
         <sphereGeometry args={[size, 100]} />
         <meshStandardMaterial color={color} />
+        {/* <meshPhysicalMaterial
+          color={color}
+          metalness={0.5}
+          roughness={0}
+          clearcoat={0.5}
+          clearcoatRoughness={1}
+          reflectivity={0.5}
+          emissive={"#000000"}
+          transparent
+        /> */}
       </mesh>
     );
   }
@@ -64,10 +74,11 @@ function ThreeJS(props) {
     >
       <ambientLight intensity={0.5} />
       <pointLight position={[10, 10, 10]} />
+      <fog attach="fog" color="#d7e4e2" near={1} far={20} />
       <Sphere position={[-6, 6, 0]} color="white" size={2} speed={1} />
       <Sphere position={[6, -6, 0]} color="teal" size={2} speed={2} />
       <Sphere position={[0, 0, 2]} color="orange" size={3} speed={3} />
     </Canvas>
   );
 }
-export default ThreeJS;
+export default Bounce;

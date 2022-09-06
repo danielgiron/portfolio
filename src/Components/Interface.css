@@ -9,26 +9,15 @@
   justify-content: space-between;
 
   width: 100vw;
-  height: 100vh;
-  padding: 1rem;
+  /* min-height: 100vh; */
+  /* padding: 1rem; */
 
   z-index: 10;
 }
 
-.Interface .contentWrapper {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  width: 100%;
-  height: 100%;
-}
-
 /*///////////////////////////////////////////////////// HEADER */
 
-.Header {
+.Hero {
   position: absolute;
   top: 0;
   left: 0;
@@ -40,10 +29,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
-  height: auto;
+  height: 100vh;
 }
 
-.Header .TitleCard {
+.Hero .TitleCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -52,7 +41,7 @@
   width: 100%;
 }
 
-.Header .Title {
+.Hero .Title {
   grid-area: title;
   font-size: 2.8rem;
   line-height: 3rem;
@@ -65,7 +54,7 @@
   text-transform: uppercase;
 }
 
-.Header .Subtitle {
+.Hero .Subtitle {
   grid-area: subtitle;
 
   display: flex;
@@ -79,7 +68,7 @@
   color: white;
 }
 
-.Header nav {
+.Hero nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -87,7 +76,7 @@
   width: min-content;
 }
 
-.Header nav button {
+.Hero nav button {
   font-family: LeagueSpartanLight;
   font-size: 1.5rem;
   line-height: 1.3rem;
@@ -96,23 +85,18 @@
   color: white;
   cursor: pointer;
   -webkit-text-stroke: 0px white;
-  transition: all 150ms ease-in-out;
 }
 
-.Header nav button:hover {
+.Hero nav button:hover {
   color: white;
-  /* letter-spacing: 1px; */
+  letter-spacing: 1px;
   -webkit-text-stroke: 1px white;
 }
 
-.Header nav button.Active {
+.Hero nav button.Active {
   -webkit-text-stroke: 1px white;
-  /* letter-spacing: 1px; */
+  letter-spacing: 1px;
 }
-
-/* .Header nav button::before {
-  content: "·";
-} */
 
 /*/////////////////////////////////////////////////////////  PAGES  */
 
@@ -141,6 +125,24 @@
 
 .Page p {
   margin-bottom: 1rem;
+  /* background-color: rgba(0, 0, 0, 0.744); */
+  padding: 0.5rem;
+}
+
+/*////////////////////////////////////////////////////////// PANEL */
+
+.Interface .Panel {
+  height: 100vh;
+  /* width: min-content; */
+  background-color: rgb(53, 58, 63);
+}
+
+@media (max-width: 900px) {
+  .Interface .Hero {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    /* color: #faebd7; */
+  }
 }
 
 /* Used for Disc's Background */

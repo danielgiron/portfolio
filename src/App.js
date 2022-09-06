@@ -1,5 +1,6 @@
 import AnimatedRoutes from "./Components/AnimatedRoutes";
-import ThreeJS from "./ThreeJS/ThreeJS";
+import Bounce from "./ThreeJS/Bounce";
+import Torus from "./ThreeJS/Torus";
 
 import "./App.css";
 
@@ -7,7 +8,8 @@ function App() {
   return (
     <div className="App" id="App">
       <AnimatedRoutes />
-      <ThreeJS />
+      {/* <Bounce /> */}
+      <Torus />
     </div>
   );
 }
