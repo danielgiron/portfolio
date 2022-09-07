@@ -1,15 +1,30 @@
 import AnimatedRoutes from "./Components/AnimatedRoutes";
-import Bounce from "./ThreeJS/Bounce";
 import Torus from "./ThreeJS/Torus";
+
+import { useEffect, useState } from "react";
+
+import { blankTheme, macrosTheme, taskyTheme } from "./Themes";
 
 import "./App.css";
 
 function App() {
+  const [theme, setTheme] = useState(taskyTheme);
+
+  function randomTheme() {
+    const themes = [blankTheme, macrosTheme, taskyTheme];
+    const rand = Math.floor(Math.random() * themes.length);
+    return themes[rand];
+  }
+
+  useEffect(() => {
+    setTheme(randomTheme());
+  }, []);
+
   return (
     <div className="App" id="App">
-      <AnimatedRoutes />
-      {/* <Bounce /> */}
-      <Torus />
+      <AnimatedRoutes theme={theme} />
+
+      <Torus theme={theme} />
     </div>
   );
 }

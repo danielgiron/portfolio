@@ -1,7 +1,20 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 
-function ThreeJS(props) {
+function Torus(props) {
+  const theme = props.theme;
+
+  const pointLights = theme.pointLights.map((light, index) => {
+    return (
+      <pointLight
+        position={light.position}
+        color={light.color}
+        intensity={light.intensity}
+        key={index}
+      />
+    );
+  });
+
   function Knot(props) {
     const mesh = useRef(null);
     const { color, position } = props;
@@ -34,13 +47,19 @@ function ThreeJS(props) {
       className="ThreeJSFiber_Canvas"
       camera={{ position: [0, 0, 10], fov: 70 }}
     >
-      {/* <ambientLight intensity={1} color={"white"} /> */}
-      {/* <pointLight position={[0, 8, 10]} color="white" intensity={2} /> */}
+      <ambientLight
+        intensity={theme.ambientLight_intensity}
+        color={theme.ambientLight_color}
+      />
+
+      {pointLights}
+
+      <fog attach="fog" color={theme.fog_color} near={6} far={15} />
 
       {/* MacrOS Colors */}
-      <pointLight position={[-5, 5, 10]} color="orange" intensity={3} />
+      {/* <pointLight position={[-5, 5, 10]} color="orange" intensity={3} />
       <pointLight position={[5, 3, 10]} color="purple" intensity={3} />
-      <fog attach="fog" color="red" near={6} far={15} />
+      <fog attach="fog" color="red" near={6} far={15} /> */}
 
       {/* TASKY Colors */}
       {/* <pointLight position={[-5, 5, 10]} color="#7be880" intensity={3} />
@@ -51,4 +70,5 @@ function ThreeJS(props) {
     </Canvas>
   );
 }
-export default ThreeJS;
+
+export default Torus;

@@ -9,42 +9,38 @@
   justify-content: space-between;
 
   width: 100vw;
-  /* min-height: 100vh; */
-  /* padding: 1rem; */
+  height: 100vh;
+  overflow-y: scroll;
 
   z-index: 10;
 }
 
 /*///////////////////////////////////////////////////// HEADER */
 
-.Hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-
+.Cover {
   position: relative;
-
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.Hero .TitleCard {
+.Cover .TitleCard {
+  position: absolute;
+  bottom: 10rem;
+  left: 1rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   justify-content: center;
-  width: 100%;
+
+  border: 1px solid white;
 }
 
-.Hero .Title {
+.Cover .Title {
   grid-area: title;
-  font-size: 2.8rem;
-  line-height: 3rem;
+  font-size: 2.5rem;
+
   text-align: center;
   font-family: LeagueSpartanMedium, sans-serif;
   color: white;
@@ -54,7 +50,7 @@
   text-transform: uppercase;
 }
 
-.Hero .Subtitle {
+.Cover .Subtitle {
   grid-area: subtitle;
 
   display: flex;
@@ -68,51 +64,129 @@
   color: white;
 }
 
-.Hero nav {
+.Cover .ThemeName {
+  position: absolute;
+  top: 1rem;
+  right: calc(1rem + 30px);
+
+  box-sizing: border-box;
+  border: 1px solid white;
+  padding: 0.5rem;
+
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
-  width: min-content;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+
+  font-size: 0.7rem;
+
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
-.Hero nav button {
+.Cover .ThemeName span.label {
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.Cover .ThemeName span.value {
+  text-transform: uppercase;
+}
+
+.Cover .ThemePallete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid white;
+  box-sizing: border-box;
+
+  width: min-content;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  font-size: 0.7rem;
+  padding: 0.5rem;
+
+  transform: rotate(-90deg) translateY(calc(-100% - 1rem)) translateX(-1rem);
+  transform-origin: top right;
+
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.Cover .ThemePallete .Color {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.Cover .ThemePallete .Name {
+  display: none;
+}
+
+.Cover .ThemePallete .Sample {
+  height: 12px;
+  width: 12px;
+  margin-right: 0.25rem;
+}
+
+/*////////////////////////////////////////////// COVER PAGE NAVIGATION */
+
+.Cover nav {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+  width: min-content;
+
+  border: 1px solid white;
+}
+
+.Cover nav button {
   font-family: LeagueSpartanLight;
-  font-size: 1.5rem;
-  line-height: 1.3rem;
-  letter-spacing: 0px;
-  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  font-size: 1rem;
   color: white;
   cursor: pointer;
-  -webkit-text-stroke: 0px white;
 }
 
-.Hero nav button:hover {
-  color: white;
-  letter-spacing: 1px;
-  -webkit-text-stroke: 1px white;
+.Cover nav button:hover {
+  color: grey;
+  /* letter-spacing: 1px; */
+  /* -webkit-text-stroke: 1px white; */
 }
 
-.Hero nav button.Active {
-  -webkit-text-stroke: 1px white;
-  letter-spacing: 1px;
+.Cover nav button.Active {
+  /* -webkit-text-stroke: 1px white; */
+  /* letter-spacing: 1px; */
+  background-color: black;
 }
 
 /*/////////////////////////////////////////////////////////  PAGES  */
 
 .Page {
-  position: absolute;
+  /* position: absolute;
   bottom: 1rem;
-  right: 1rem;
+  right: 1rem; */
 
-  /* position: relative; */
+  position: relative;
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: flex-start;
+  align-items: flex-start;
 
-  width: 70%;
+  width: 100%;
+  height: 100vh;
 
   color: grey;
   font-family: LeagueSpartanLight;
@@ -125,25 +199,29 @@
 
 .Page p {
   margin-bottom: 1rem;
-  /* background-color: rgba(0, 0, 0, 0.744); */
+  background-color: #000000be;
   padding: 0.5rem;
+}
+
+button {
+  cursor: pointer;
 }
 
 /*////////////////////////////////////////////////////////// PANEL */
 
 .Interface .Panel {
-  height: 100vh;
-  /* width: min-content; */
-  background-color: rgb(53, 58, 63);
+  min-height: 100vh;
+  background-color: #e1e1e14b;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
-
+/* 
 @media (max-width: 900px) {
-  .Interface .Hero {
+  .Interface .Cover {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    /* color: #faebd7; */
   }
-}
+} */
 
 /* Used for Disc's Background */
 /* .Interface .Background {

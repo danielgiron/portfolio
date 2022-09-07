@@ -1,11 +1,9 @@
 .App {
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
 }
 
 .App .ThreeJSFiber_Canvas {
-  /* -webkit-filter: blur(20px);
-  filter: blur(20px); */
-
   background-color: #d7e4e2;
 }
