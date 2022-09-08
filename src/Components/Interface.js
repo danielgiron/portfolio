@@ -1,12 +1,32 @@
-import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import { Outlet } from "react-router-dom";
+import React, { useState, useRef } from "react";
+
+import Nav from "./Nav";
+
+import Home from "../Pages/Home";
+import About from "../Pages/About";
+import Contact from "../Pages/Contact";
+import Projects from "../Pages/Projects";
 
 import "./Interface.css";
 
 function Interface(props) {
-  const location = useLocation();
-  const navigate = useNavigate();
+  const pageRef = useRef(null);
+  const [page, setPage] = useState("home");
+
+  function returnPage() {
+    if (page === "home") {
+      return <Home />;
+    } else if (page === "about") {
+      return <About />;
+    } else if (page === "contact") {
+      return <Contact />;
+    } else if (page === "projects") {
+      return <Projects />;
+    }
+  }
+
+  const scrollToPage = () => pageRef.current.scrollIntoView();
+
   return (
     <div className="Interface">
       <div className="Cover">
@@ -46,45 +66,13 @@ function Interface(props) {
           })}
         </div>
 
-        <nav>
-          <button
-            className={`${location.pathname === "/home" ? "Active" : ""}`}
-            onClick={() => {
-              navigate("/home");
-            }}
-          >
-            Home
-          </button>
-          <button
-            className={`${location.pathname === "/about" ? "Active" : ""}`}
-            onClick={() => {
-              navigate("/about");
-            }}
-          >
-            About
-          </button>
-
-          <button
-            className={`${location.pathname === "/projects" ? "Active" : ""}`}
-            onClick={() => {
-              navigate("/projects");
-            }}
-          >
-            Projects
-          </button>
-          <button
-            className={`${location.pathname === "/contact" ? "Active" : ""}`}
-            onClick={() => {
-              navigate("/contact");
-            }}
-          >
-            Contact
-          </button>
-        </nav>
+        <Nav page={page} setPage={setPage} scrollToPage={scrollToPage} />
       </div>
 
-      <div className="Panel">
-        <Outlet />
+      <div className="PageContent" ref={pageRef}>
+        <Nav page={page} setPage={setPage} scrollToPage={scrollToPage} />
+
+        {returnPage()}
       </div>
     </div>
   );
