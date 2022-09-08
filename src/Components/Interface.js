@@ -10,6 +10,7 @@ import Projects from "../Pages/Projects";
 import "./Interface.css";
 
 function Interface(props) {
+  const { theme } = props;
   const pageRef = useRef(null);
   const [page, setPage] = useState("home");
 
@@ -25,6 +26,10 @@ function Interface(props) {
     }
   }
 
+  const colorSwatch = [theme.ambientLight_color, theme.fog_color];
+  theme.pointLights.map((light) => {
+    colorSwatch.push(light.color);
+  });
   const scrollToPage = () => pageRef.current.scrollIntoView();
 
   return (
@@ -36,31 +41,14 @@ function Interface(props) {
         </div>
         <div className="ThemeName">
           <span className="label">Theme</span>
-          <span className="value">{props.theme.name}</span>
+          <span className="value">{theme.name}</span>
         </div>
         <div className="ThemePallete">
-          <div className="Color">
-            <div
-              className="Sample"
-              style={{ backgroundColor: props.theme.ambientLight_color }}
-            ></div>
-            <div className="Hexcode">{props.theme.ambientLight_color}</div>
-          </div>
-          <div className="Color">
-            <div
-              className="Sample"
-              style={{ backgroundColor: props.theme.fog_color }}
-            ></div>
-            <div className="Hexcode">{props.theme.fog_color}</div>
-          </div>
-          {props.theme.pointLights.map((light) => {
+          {colorSwatch.map((color) => {
             return (
               <div className="Color">
-                <div
-                  className="Sample"
-                  style={{ backgroundColor: light.color }}
-                ></div>
-                <div className="Hexcode">{light.color}</div>
+                <div className="Sample" style={{ backgroundColor: color }} />
+                <div className="Hexcode">{color}</div>
               </div>
             );
           })}
