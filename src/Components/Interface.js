@@ -8,23 +8,24 @@ import Contact from "../Pages/Contact";
 import Projects from "../Pages/Projects";
 
 import "./Interface.css";
+import { Outlet } from "react-router-dom";
 
 function Interface(props) {
   const { theme } = props;
   const pageRef = useRef(null);
   const [page, setPage] = useState("home");
 
-  function returnPage() {
-    if (page === "home") {
-      return <Home />;
-    } else if (page === "about") {
-      return <About />;
-    } else if (page === "contact") {
-      return <Contact />;
-    } else if (page === "projects") {
-      return <Projects />;
-    }
-  }
+  // function returnPage() {
+  //   if (page === "home") {
+  //     return <Home />;
+  //   } else if (page === "about") {
+  //     return <About />;
+  //   } else if (page === "contact") {
+  //     return <Contact />;
+  //   } else if (page === "projects") {
+  //     return <Projects />;
+  //   }
+  // }
 
   const colorSwatch = [theme.ambientLight_color, theme.fog_color];
   theme.pointLights.map((light) => {
@@ -46,7 +47,7 @@ function Interface(props) {
         <div className="ThemePallete">
           {colorSwatch.map((color) => {
             return (
-              <div className="Color">
+              <div className="Color" key={color}>
                 <div className="Sample" style={{ backgroundColor: color }} />
                 <div className="Hexcode">{color}</div>
               </div>
@@ -60,7 +61,8 @@ function Interface(props) {
       <div className="PageContent" ref={pageRef}>
         <Nav page={page} setPage={setPage} scrollToPage={scrollToPage} />
 
-        {returnPage()}
+        {/* {returnPage()} */}
+        <Outlet />
       </div>
     </div>
   );

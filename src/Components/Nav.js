@@ -1,22 +1,30 @@
 import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function Nav(props) {
   const { page, setPage, scrollToPage } = props;
+  const navigate = useNavigate();
+  const location = useLocation();
+  const path = location.pathname;
   return (
     <nav>
       <button
-        className={`${page === "home" ? "Active" : ""}`}
+        // className={`${page === "home" ? "Active" : ""}`}
+        className={`${path === "/home" ? "Active" : ""}`}
         onClick={() => {
-          setPage("home");
+          // setPage("home");
+          navigate("/home");
           scrollToPage();
         }}
       >
         Home
       </button>
       <button
-        className={`${page === "about" ? "Active" : ""}`}
+        // className={`${page === "about" ? "Active" : ""}`}
+        className={`${path === "/about" ? "Active" : ""}`}
         onClick={() => {
-          setPage("about");
+          navigate("/about");
+          // setPage("about");
           scrollToPage();
         }}
       >
@@ -24,18 +32,22 @@ function Nav(props) {
       </button>
 
       <button
-        className={`${page === "projects" ? "Active" : ""}`}
+        // className={`${page === "projects" ? "Active" : ""}`}
+        className={`${path === "/projects" ? "Active" : ""}`}
         onClick={() => {
-          setPage("projects");
+          // setPage("projects");
+          navigate("/projects");
           scrollToPage();
         }}
       >
         Projects
       </button>
       <button
-        className={`${page === "contact" ? "Active" : ""}`}
+        // className={`${page === "contact" ? "Active" : ""}`}
+        className={`${path === "/contact" ? "Active" : ""}`}
         onClick={() => {
-          setPage("contact");
+          // setPage("contact");
+          navigate("/contact");
           scrollToPage();
         }}
       >

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Outlet } from "react-router-dom";
 
 function Projects(props) {
   return (
@@ -26,6 +27,8 @@ function Projects(props) {
         nunc mattis enim ut. Magna etiam tempor orci eu lobortis elementum nibh
         tellus.
       </p>
+
+      <Outlet />
     </motion.div>
   );
 }
