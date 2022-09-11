@@ -1,6 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Outlet } from "react-router-dom";
+import ImageCarousel from "../Components/ImageCarousel";
+
+import Tasky1 from "../media/Tasky1.png";
+import Tasky2 from "../media/Tasky2.png";
+import Tasky3 from "../media/Tasky3.png";
+import Tasky4 from "../media/Tasky4.png";
+import Tasky5 from "../media/Tasky5.png";
+import Tasky6 from "../media/Tasky6.png";
+import Tasky7 from "../media/Tasky7.png";
 
 function Projects(props) {
   return (
@@ -11,6 +20,15 @@ function Projects(props) {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
+      {/* <img src={Tasky1} />
+      <img src={Tasky2} />
+      <img src={Tasky3} />
+      <img src={Tasky4} />
+      <img src={Tasky5} />
+      <img src={Tasky6} />
+      <img src={Tasky7} /> */}
+
+      <ImageCarousel />
       <p>
         Dictum varius duis at consectetur lorem donec massa sapien. Aenean sed
         adipiscing diam donec adipiscing tristique. Ullamcorper morbi tincidunt

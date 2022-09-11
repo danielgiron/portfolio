@@ -2,7 +2,8 @@ import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 function Nav(props) {
-  const { page, setPage, scrollToPage } = props;
+  // const { page, setPage, scrollToPage } = props;
+  const { scrollToPage } = props;
   const navigate = useNavigate();
   const location = useLocation();
   const path = location.pathname;
