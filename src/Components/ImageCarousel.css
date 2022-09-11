@@ -1,20 +1,11 @@
 .carousel {
   width: 100%;
-
-  /* border-radius: 0.5rem; */
 }
 
 .carousel-inner {
-  /* background-image: url("../media/backdrop.png");
-  background-size: cover; */
   background-color: #19191945;
   /* border: 1px solid #191919; */
 }
-
-/* .carouselSlide {
-  border: 2px solid gold !important;
-}  */
-/* .carousel-item {} */
 
 .carousel-item {
   position: relative;
@@ -51,14 +42,6 @@
   margin: 0;
 }
 
-/* .carousel-caption > * {
-  border: 1px solid blue;
-} */
-
-.carousel-caption > h3 {
-  font-size: 4vw;
-}
-
 .carousel-caption > img {
   max-height: 50%;
   cursor: pointer;
@@ -66,5 +49,5 @@
 }
 
 .carousel-indicators {
-  top: 93%;
+  top: 91%;
 }
