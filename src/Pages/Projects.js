@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Outlet } from "react-router-dom";
-import ImageCarousel from "../Components/ImageCarousel";
+
+import ProjectDisplay from "../Components/ProjectDisplay";
 
 function Projects(props) {
   return (
@@ -12,7 +13,7 @@ function Projects(props) {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <ImageCarousel />
+      <div className="Header">Heading One</div>
       <p>
         Dictum varius duis at consectetur lorem donec massa sapien. Aenean sed
         adipiscing diam donec adipiscing tristique. Ullamcorper morbi tincidunt
@@ -20,6 +21,8 @@ function Projects(props) {
         maecenas pharetra convallis posuere morbi leo urna. Fames ac turpis
         egestas integer eget.
       </p>
+
+      <div className="Header">Heading Two</div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Diam quis enim
@@ -29,6 +32,8 @@ function Projects(props) {
         nunc mattis enim ut. Magna etiam tempor orci eu lobortis elementum nibh
         tellus.
       </p>
+
+      <ProjectDisplay />
 
       <Outlet />
     </motion.div>

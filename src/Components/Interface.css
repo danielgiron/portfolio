@@ -256,7 +256,12 @@
   color: grey;
   font-family: LeagueSpartanLight;
   font-size: 1.2rem;
-  text-align: right;
+  /* text-align: right; */
+}
+
+.Page .Header {
+  font-family: LeagueSpartanMedium;
+  font-size: 1.3rem;
 }
 
 button {
