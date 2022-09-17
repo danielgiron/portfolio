@@ -4,11 +4,6 @@ import Typewriter from "typewriter-effect";
 
 import Nav from "./Nav";
 
-// import Home from "../Pages/Home";
-// import About from "../Pages/About";
-// import Contact from "../Pages/Contact";
-// import Projects from "../Pages/Projects";
-
 import "./Interface.css";
 
 function Interface(props) {
@@ -16,25 +11,14 @@ function Interface(props) {
   const pageRef = useRef(null);
   const [page, setPage] = useState("home");
 
-  // function returnPage() {
-  //   if (page === "home") {
-  //     return <Home />;
-  //   } else if (page === "about") {
-  //     return <About />;
-  //   } else if (page === "contact") {
-  //     return <Contact />;
-  //   } else if (page === "projects") {
-  //     return <Projects />;
-  //   }
-  // }
-
   const colorSwatch = [theme.ambientLight_color, theme.fog_color];
   theme.pointLights.map((light) => {
     colorSwatch.push(light.color);
+    return true;
   });
   function scrollToPage() {
     setTimeout(() => {
-      pageRef.current.scrollIntoView();
+      pageRef.current.scrollIntoView({ behavior: "smooth" });
     }, 50);
   }
 
@@ -43,13 +27,12 @@ function Interface(props) {
       <div className="Cover">
         <div className="TitleCard">
           <div className="Title">Baldwin Giron</div>
-          {/* <div className="Subtitle">Full Stack Developer</div> */}
           <div className="Subtitle">
             <Typewriter
               options={{
                 strings: [
                   "Fullstack Developer",
-                  "Cat Fanatic",
+                  "Cat Enthusiast",
                   "Miscellaneous Hobbyist",
                 ],
                 autoStart: true,

@@ -1,9 +1,9 @@
 export const blankTheme = {
-  name: "Blank",
-  ambientLight_color: "#add8e6",
-  ambientLight_intensity: 0.2,
-  pointLights: [{ color: "#ffffff", intensity: 1, position: [0, 7, 10] }],
-  fog_color: "#808080",
+  name: "this",
+  ambientLight_color: "#adcfe6",
+  ambientLight_intensity: 0.7,
+  pointLights: [{ color: "#fff", intensity: 1.5, position: [-3, 5, 5] }],
+  fog_color: "#3e646e",
 };
 
 export const macrosTheme = {

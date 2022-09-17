@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import React from "react";
 import ImageCarousel from "../Components/ImageCarousel";
 import { macrosSlides } from "../Slides";

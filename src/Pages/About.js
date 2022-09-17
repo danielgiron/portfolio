@@ -10,7 +10,7 @@ function About(props) {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="PageHeader">About Me</div>
+      <div className="Header">About Me</div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Diam quis enim
