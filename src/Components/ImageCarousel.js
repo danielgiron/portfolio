@@ -16,7 +16,7 @@ function ImageCarousel(props) {
     <Carousel activeIndex={index} onSelect={handleSelect}>
       {slides.map((slide, index) => {
         return (
-          <Carousel.Item className="carouselSlide">
+          <Carousel.Item className="carouselSlide" key={index}>
             <img
               className="d-block w-100"
               src={transparentBackdrop}
