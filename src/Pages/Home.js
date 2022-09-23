@@ -12,21 +12,19 @@ function Home(props) {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
+      <div className="Header">Getting started... Welcome!</div>
       <p>
-        Dictum varius duis at consectetur lorem donec massa sapien. Aenean sed
-        adipiscing diam donec adipiscing tristique. Ullamcorper morbi tincidunt
-        ornare massa eget egestas purus viverra accumsan. Ac turpis egestas
-        maecenas pharetra convallis posuere morbi leo urna. Fames ac turpis
-        egestas integer eget.
+        Hi there! My name is Baldwin (Daniel) Giron. This is the portofolio site
+        I have put together to showcase some of my work and skills in web
+        development.
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Diam quis enim
-        lobortis scelerisque. Consequat nisl vel pretium lectus quam id leo in
-        vitae. Vitae sapien pellentesque habitant morbi. Placerat vestibulum
-        lectus mauris ultrices eros. Amet purus gravida quis blandit turpis. Dui
-        nunc mattis enim ut. Magna etiam tempor orci eu lobortis elementum nibh
-        tellus.
+        To read a little bit more about me or my technical skills, head over to
+        the "About" and "Projects" pages respectively.{" "}
+      </p>
+      <p>
+        If you have an idea for a project you would like to work on with me, I
+        would be thrilled if you reach out from the form in the "Contact" page!
       </p>
     </motion.div>
   );

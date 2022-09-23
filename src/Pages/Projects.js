@@ -1,10 +1,39 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Outlet } from "react-router-dom";
 
 import ProjectDisplay from "../Components/ProjectDisplay";
 
+import {
+  html,
+  css,
+  javascript,
+  react,
+  node,
+  redux,
+  express,
+  npm,
+  github,
+  mongo,
+  heroku,
+  netlify,
+  bootstrap,
+  threejs,
+} from "../media/icons/iconDOMS";
+
 function Projects(props) {
+  const TopFive = [html, css, javascript, react, node];
+  const HonorableMentions = [
+    express,
+    npm,
+    redux,
+    github,
+    mongo,
+    heroku,
+    netlify,
+    bootstrap,
+    threejs,
+  ];
+
   return (
     <motion.div
       className="Projects Page"
@@ -13,29 +42,25 @@ function Projects(props) {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="Header">Heading One</div>
+      <div className="Header">Tech Stack</div>
       <p>
-        Dictum varius duis at consectetur lorem donec massa sapien. Aenean sed
-        adipiscing diam donec adipiscing tristique. Ullamcorper morbi tincidunt
-        ornare massa eget egestas purus viverra accumsan. Ac turpis egestas
-        maecenas pharetra convallis posuere morbi leo urna. Fames ac turpis
-        egestas integer eget.
+        I've picked up a few tips and tricks along the way on my journey to
+        become a web developer. Immediately below are some of the technologies I
+        have worked with so far.
       </p>
+      <div className="Technologies">
+        <div className="TopFive">{TopFive}</div>
+        <div className="HonorableMentions">{HonorableMentions}</div>
+      </div>
 
-      <div className="Header">Heading Two</div>
+      <div className="Header">The Projects</div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Diam quis enim
-        lobortis scelerisque. Consequat nisl vel pretium lectus quam id leo in
-        vitae. Vitae sapien pellentesque habitant morbi. Placerat vestibulum
-        lectus mauris ultrices eros. Amet purus gravida quis blandit turpis. Dui
-        nunc mattis enim ut. Magna etiam tempor orci eu lobortis elementum nibh
-        tellus.
+        Listed in chronological order, here are the larger and significant
+        projects that I have—just about—completed thus far. Spoiler alert, this
+        portfolio site is the last on the list.
       </p>
 
       <ProjectDisplay />
-
-      <Outlet />
     </motion.div>
   );
 }

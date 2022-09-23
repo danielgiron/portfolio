@@ -12,7 +12,7 @@ function App() {
 
   function randomTheme() {
     const themes = [blankTheme, macrosTheme, taskyTheme];
-    // const themes = [blankTheme];
+    // const themes = [macrosTheme];
     const rand = Math.floor(Math.random() * themes.length);
     return themes[rand];
   }
