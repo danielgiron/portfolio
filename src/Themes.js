@@ -11,11 +11,12 @@ export const macrosTheme = {
   ambientLight_color: "#000000",
   ambientLight_intensity: 0,
   pointLights: [
-    { color: "#ffa500", intensity: 3, position: [-5, 5, 10] },
-    { color: "#800080", intensity: 3, position: [5, 3, 10] },
+    { color: "#ffa500", intensity: 2, position: [-5, 4, 10] },
+    { color: "#863786", intensity: 2, position: [5, -1, 10] },
   ],
-  fog_color: "#ff0000",
+  fog_color: "#f33a10",
 };
+
 export const taskyTheme = {
   name: "Tasky",
   ambientLight_color: "#0000ff",
