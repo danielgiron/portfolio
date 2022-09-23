@@ -1,12 +1,13 @@
 import React from "react";
 import ImageCarousel from "../Components/ImageCarousel";
 import { macrosSlides } from "../Slides";
+import { html, css, javascript, react } from "../media/icons/iconDOMS";
 
 function ProjectMacros(props) {
   return (
     <>
       <ImageCarousel slides={macrosSlides} />
-
+      <div className="TechStack">{[html, css, javascript, react]}</div>
       <div className="Header">Heading One</div>
       <p>
         Dictum varius duis at consectetur lorem donec massa sapien. Aenean sed

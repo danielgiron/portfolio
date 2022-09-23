@@ -254,7 +254,7 @@
   min-height: 85vh;
   margin-top: 2rem;
 
-  color: grey;
+  color: #666666;
   font-family: LeagueSpartanLight;
   font-size: 1.2rem;
   /* text-align: right; */
@@ -281,4 +281,46 @@ button {
 p {
   line-height: 1.3;
   font-size: 1.1rem;
+}
+
+.Technologies {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid white;
+  padding: 0.5rem;
+}
+
+.TopFive,
+.HonorableMentions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icon {
+  padding: 0.2rem;
+}
+
+.TopFive .icon {
+  width: 15%;
+}
+
+.HonorableMentions .icon {
+  width: 10%;
+}
+
+.TechStack {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.TechStack .icon {
+  width: 10%;
+  padding: 0.3rem;
+  filter: brightness(0) grayscale(1);
 }

@@ -1,12 +1,22 @@
 import React from "react";
 import ImageCarousel from "../Components/ImageCarousel";
 import { taskySlides } from "../Slides";
+import {
+  css,
+  javascript,
+  react,
+  node,
+  redux,
+  mongo,
+} from "../media/icons/iconDOMS";
 
 function ProjectTasky(props) {
   return (
     <>
       <ImageCarousel slides={taskySlides} />
-
+      <div className="TechStack">
+        {[css, javascript, react, node, redux, mongo]}
+      </div>
       <div className="Header">Heading One</div>
       <p>
         Dictum varius duis at consectetur lorem donec massa sapien. Aenean sed
