@@ -8,14 +8,16 @@ import {
   node,
   redux,
   mongo,
-} from "../media/icons/iconDOMS";
+} from "../media/icons/techObjs";
 
 function ProjectTasky(props) {
   return (
     <>
       <ImageCarousel slides={taskySlides} />
       <div className="TechStack">
-        {[css, javascript, react, node, redux, mongo]}
+        {[css, javascript, react, node, redux, mongo].map((tech) => {
+          return <img src={tech.svg} className="icon" alt={tech.name} />;
+        })}
       </div>
       <div className="Header">Heading One</div>
       <p>

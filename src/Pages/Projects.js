@@ -18,11 +18,27 @@ import {
   netlify,
   bootstrap,
   threejs,
-} from "../media/icons/iconDOMS";
+} from "../media/icons/techObjs";
 
 function Projects(props) {
-  const TopFive = [html, css, javascript, react, node];
-  const HonorableMentions = [
+  // const TopFive = [html, css, javascript, react, node];
+  // const HonorableMentions = [
+  //   express,
+  //   npm,
+  //   redux,
+  //   github,
+  //   mongo,
+  //   heroku,
+  //   netlify,
+  //   bootstrap,
+  //   threejs,
+  // ];
+  const allIcons = [
+    html,
+    css,
+    javascript,
+    react,
+    node,
     express,
     npm,
     redux,
@@ -33,7 +49,7 @@ function Projects(props) {
     bootstrap,
     threejs,
   ];
-
+  console.log(allIcons);
   return (
     <motion.div
       className="Projects Page"
@@ -49,8 +65,17 @@ function Projects(props) {
         have worked with so far.
       </p>
       <div className="Technologies">
-        <div className="TopFive">{TopFive}</div>
-        <div className="HonorableMentions">{HonorableMentions}</div>
+        {/* <div className="TopFive">{TopFive}</div>
+        <div className="HonorableMentions">{HonorableMentions}</div> */}
+
+        {allIcons.map((tech) => {
+          return (
+            <div className="Tech" key={tech.name}>
+              <img src={tech.svg} className="icon" alt={tech.name} />
+              <div className="label">{tech.name}</div>
+            </div>
+          );
+        })}
       </div>
 
       <div className="Header">The Projects</div>
