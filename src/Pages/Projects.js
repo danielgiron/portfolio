@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import { slideIn } from "../Animations";
+import "../Animations.css";
 
 import ProjectDisplay from "../Components/ProjectDisplay";
 
@@ -21,18 +23,6 @@ import {
 } from "../media/icons/techObjs";
 
 function Projects(props) {
-  // const TopFive = [html, css, javascript, react, node];
-  // const HonorableMentions = [
-  //   express,
-  //   npm,
-  //   redux,
-  //   github,
-  //   mongo,
-  //   heroku,
-  //   netlify,
-  //   bootstrap,
-  //   threejs,
-  // ];
   const allIcons = [
     html,
     css,
@@ -49,7 +39,11 @@ function Projects(props) {
     bootstrap,
     threejs,
   ];
-  console.log(allIcons);
+
+  useEffect(() => {
+    slideIn();
+  }, []);
+
   return (
     <motion.div
       className="Projects Page"
@@ -58,19 +52,16 @@ function Projects(props) {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="Header">Tech Stack</div>
-      <p>
+      <div className="Header SlideElem">Tech Stack</div>
+      <p className="SlideElem">
         I've picked up a few tips and tricks along the way on my journey to
         become a web developer. Immediately below are some of the technologies I
         have worked with so far.
       </p>
-      <div className="Technologies">
-        {/* <div className="TopFive">{TopFive}</div>
-        <div className="HonorableMentions">{HonorableMentions}</div> */}
-
+      <div className="Technologies SlideElem">
         {allIcons.map((tech) => {
           return (
-            <div className="Tech" key={tech.name}>
+            <div className="Tech SlideElem" key={tech.name}>
               <img src={tech.svg} className="icon" alt={tech.name} />
               <div className="label">{tech.name}</div>
             </div>
@@ -78,14 +69,23 @@ function Projects(props) {
         })}
       </div>
 
-      <div className="Header">The Projects</div>
-      <p>
+      <div className="Header SlideElem">The Projects</div>
+      <p className="SlideElem">
         Listed in chronological order, here are the larger and significant
-        projects that I have—just about—completed thus far. Spoiler alert, this
-        portfolio site is the last on the list.
+        projects that I have—just about—completed thus far.
       </p>
+      <p>(Spoiler alert, this portfolio site is the last on the list)</p>
 
       <ProjectDisplay />
+
+      <div className="Header SlideElem">The Future</div>
+      <p>In the future I plan on learning more or working on the following:</p>
+      <ul>
+        <li>Jasmine</li>
+        <li>CSS Preprocessors</li>
+        <li>Open Source Projects + Contributions</li>
+        <li>More on Three.js</li>
+      </ul>
     </motion.div>
   );
 }

@@ -11,7 +11,7 @@ function Nav(props) {
     <nav>
       <button
         // className={`${page === "home" ? "Active" : ""}`}
-        className={`${path === "/home" ? "Active" : ""}`}
+        className={`${path === "/home" || path === "/" ? "Active" : ""}`}
         onClick={() => {
           // setPage("home");
           navigate("/home");

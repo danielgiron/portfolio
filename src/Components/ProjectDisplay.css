@@ -10,6 +10,7 @@
   flex-direction: column;
   gap: 1rem;
   padding-left: 0;
+  list-style: none;
 }
 
 .Project {
@@ -19,12 +20,14 @@
 .Project button {
   width: 100%;
   padding: 1rem;
+  padding-top: calc(1rem + 3px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   transition: all 200ms;
   border-bottom: 1px solid transparent;
+  background-color: #ffffff87;
 }
 
 .Project .arrow {
@@ -43,7 +46,6 @@
 
 .Project.Active > button {
   border-bottom: 1px solid white;
-  background-color: #ffffff87;
 }
 
 /* .Project:not(.Active) {
@@ -56,4 +58,8 @@
 
 .Project .ProjectBody {
   padding: 0.5rem;
+}
+
+.Project ul {
+  list-style-type: disc;
 }

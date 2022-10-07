@@ -61,7 +61,6 @@ function Interface(props) {
 
       <div className="PageContent" ref={pageRef}>
         <Nav page={page} setPage={setPage} scrollToPage={scrollToPage} />
-        {/* {returnPage()} */}
         <Outlet /> {/* Page component passed in from AnimatedRoutes router */}
       </div>
     </div>

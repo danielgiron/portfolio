@@ -78,11 +78,11 @@ button {
 }
 
 /* Remove list styles (bullets/numbers) */
-ol,
+/* ol,
 ul,
 menu {
   list-style: none;
-}
+} */
 
 /* For images to not be able to exceed their container */
 img {

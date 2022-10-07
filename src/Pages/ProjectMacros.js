@@ -8,28 +8,47 @@ function ProjectMacros(props) {
     <>
       <ImageCarousel slides={macrosSlides} />
       <div className="TechStack">
-        {[html, css, javascript, react].map((tech) => {
-          return <img src={tech.svg} className="icon" alt={tech.name} />;
+        {[html, css, javascript, react].map((tech, index) => {
+          return (
+            <img src={tech.svg} className="icon" alt={tech.name} key={index} />
+          );
         })}
       </div>
-      <div className="Header">Heading One</div>
+      <div className="Header">Project Summary</div>
       <p>
-        Dictum varius duis at consectetur lorem donec massa sapien. Aenean sed
-        adipiscing diam donec adipiscing tristique. Ullamcorper morbi tincidunt
-        ornare massa eget egestas purus viverra accumsan. Ac turpis egestas
-        maecenas pharetra convallis posuere morbi leo urna. Fames ac turpis
-        egestas integer eget.
+        MacroOS, a play on "MacOS" and "macros", is a tool nutritional tracking
+        application with a variety of useful helpful features. On the first
+        view, users are can calculate their daily nutritional macro-nutrient
+        requirements as well as their total daily energy expenditure. From
+        there, there is a individual food items view and a recipe view from
+        which they can see all sorts of useful nutritional info about items and
+        recipes in the collections. The last view is a tracking page where users
+        can log and see a summary of what they've eaten that day, as well as
+        review all previous logs and see trends in their diet with a graphical
+        format.
       </p>
-      <div className="Header">Heading Two</div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Diam quis enim
-        lobortis scelerisque. Consequat nisl vel pretium lectus quam id leo in
-        vitae. Vitae sapien pellentesque habitant morbi. Placerat vestibulum
-        lectus mauris ultrices eros. Amet purus gravida quis blandit turpis. Dui
-        nunc mattis enim ut. Magna etiam tempor orci eu lobortis elementum nibh
-        tellus.
+        This project was my first big dive into the world of React. It was a
+        long but equally fun journey getting familiar with what I could do with
+        this technology in my tool belt! React aside, the biggest challenge was
+        all the data there was to handle, and then creating new data from it.
+        There was a lot of manual testing and re-testing of code I had to do,
+        but I now know the importance and handiness of tools like Jasmine for
+        future projects.
       </p>
+      <div className="Header">What I Learned</div>
+      <p>
+        The big focus of this project was React, however I learned a few more
+        things along the way. These include but are not limited to:
+      </p>
+      <ul>
+        <li>JavaScript (Functions and Modules)</li>
+        <li>CSS (Selectors and Specificity)</li>
+        <li>API Requests</li>
+        <li>Responsive Design</li>
+        <li>Local Storage</li>
+        <li>C3 for D3</li>
+      </ul>
     </>
   );
 }

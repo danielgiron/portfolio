@@ -12,24 +12,23 @@ function About(props) {
     >
       <div className="Header">About Daniel (That's me!)</div>
       <p>
-        Throughout my portfolio you might see screenshots of my accounts with
-        the name listed as Daniel—this is no mistake! I typically go by my
-        middle name among friends and family but referring to me by my first
-        name (Baldwin) is A-Okay as well.
+        Throughout my portfolio you might see screenshots with my name listed as
+        Daniel—this is no mistake! I typically go by my middle but referring to
+        me by my first name (Baldwin) is A-Okay.
       </p>
       <p>
         I am from New York City. I am a parent to a lovely cat, Irina, who I
-        adore very much.
+        adore very much. Some topics of interest of mine are cooking/baking,
+        arts/crafting, woodworking, 3D modeling/printing, sculpting/casting—just
+        about anything that allows me to create, either functionally useful
+        items or as a form of self-expression.
       </p>
       <p>
         In general, I have always enjoyed the act of breaking things down,
         taking them apart, and seeing what makes said thing be "The Thing" that
         it is. Even more so, I like being able to build it back together again
         in a way that makes it my own. A sort of balance between being a
-        tinkerer and an artist. Some topics of interest of mine are
-        cooking/baking, arts/crafting, woodworking, 3D modeling/printing,
-        sculpting/casting—just about anything that allows me to create, either
-        functionally useful items or as a form of self-expression.
+        tinkerer and an artist.
       </p>
       <p>
         I graduated from Syracuse University, earning a B.S. in Computer
