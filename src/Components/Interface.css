@@ -259,6 +259,20 @@
   /* text-align: right; */
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.Page section + section {
+  border-top: 1px solid #c2c2c2;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  width: 100%;
+}
+
 button {
   cursor: pointer;
 }
@@ -269,7 +283,7 @@ button {
   background-color: #222222;
   padding: 0rem 0.5rem;
   padding-top: calc(0rem + 5px);
-  margin: 1rem 0rem 1.5rem 0rem;
+  margin: 0rem 0rem 1.5rem 0rem;
   width: max-content;
   color: white;
   font-size: 1.2rem;
@@ -359,4 +373,237 @@ p {
 .Mail.Op:hover {
   background-color: white;
   color: grey;
+}
+
+.designElement {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .designElement {
+    display: block;
+    /* display: none; */
+    position: absolute;
+    top: calc(40% - 8rem);
+    left: calc(45% - 2rem);
+    width: 550px;
+    height: 400px;
+
+    /* -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px); */
+    /* border-top: 1px solid white; */
+    /* border: 1px solid white; */
+    /* -webkit-backdrop-filter: saturate(1) brightness(0.95) blur(10px);
+    backdrop-filter: saturate(1) brightness(0.95) blur(10px); */
+  }
+
+  .Bars {
+    display: flex;
+
+    position: absolute;
+    top: calc(40% + 2rem);
+    left: calc(45% + 22rem);
+    flex-direction: column;
+
+    width: 100px;
+    height: 42px;
+    gap: 5px;
+
+    transform: rotate(180deg);
+  }
+
+  .XP,
+  .YP {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .XPBar,
+  .YPBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: white;
+  }
+
+  .Cover .TitleCard {
+    top: calc(40% - 0rem);
+    left: calc(45% + 0rem);
+    transform: translate(0, -50%);
+
+    width: max-content;
+    height: max-content;
+  }
+
+  .Cover .Title {
+    font-size: 4rem;
+    font-family: LeagueSpartanMedium, sans-serif;
+    -webkit-text-stroke: none;
+  }
+
+  .Cover .Subtitle {
+    font-size: 1.3rem;
+  }
+
+  /*////////////////////////////////////////////////// THEME (COVER) DECORATIONS  */
+
+  .Cover .ThemeInfo {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: calc(100vh - 4rem);
+
+    transform: rotate(90deg) translateX(100%);
+    transform-origin: top right;
+  }
+
+  .Cover .ThemeName {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: max-content;
+    transform: none;
+  }
+
+  .Cover .ThemeInfo .Line {
+    height: 2px;
+    background-color: white;
+    width: 100%;
+  }
+
+  .Cover .ThemePallete {
+    position: relative;
+    width: max-content;
+    transform: none;
+  }
+
+  /*////////////////////////////////////////////// COVER PAGE NAVIGATION */
+
+  .Cover nav {
+    top: calc(65% - 1rem);
+    left: calc(45% + 0rem);
+    /* transform: translate(0, -50%); */
+    flex-direction: row;
+    gap: 0.5rem;
+    width: calc(450px);
+
+    justify-content: space-between;
+  }
+
+  .Cover nav button {
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: all 100ms;
+    border: none;
+    padding: 0;
+    width: min-content;
+  }
+
+  .Cover nav button:hover {
+    /* color: #222; */
+    border-bottom: 1px solid white;
+  }
+
+  .Cover nav button.Active {
+    background-color: transparent;
+    border-bottom: 2px solid white;
+
+    /* color: #222; */
+  }
+
+  /***************************************** Page Content */
+
+  .PageContent {
+    position: relative;
+    width: 100%;
+    padding: 0rem;
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    grid-template-areas: "nav pageContent";
+  }
+
+  .Page {
+    grid-area: pageContent;
+    width: 65%;
+    max-width: 700px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+    border-right: 1px dashed #c2c2c2;
+  }
+
+  .Page section + section {
+    border-top: 1px solid #c2c2c2;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    width: 100%;
+  }
+
+  /********************************* Secondary Nav, Page Content */
+
+  .PageContent nav {
+    grid-area: nav;
+    position: relative;
+    /* left: 2rem;
+    top: 2rem; */
+
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    /* border: 1px solid white; */
+
+    box-sizing: border-box;
+    /* background-color: rgba(32, 32, 32, 0.867); */
+    border-right: 1px solid #c2c2c2;
+
+    height: 100%;
+
+    /* transform: rotate(270deg) translateX(-100%);
+    transform-origin: top left; */
+  }
+
+  .PageContent nav button:first-child {
+    margin-top: calc(2rem - 3px);
+  }
+
+  .PageContent nav button {
+    font-family: LeagueSpartanLight;
+
+    font-size: 1.2rem;
+    width: 100%;
+    justify-content: flex-end;
+
+    color: grey;
+    border: none;
+
+    /* padding-left: 0.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3px; */
+
+    padding: calc(0.75rem) 1.5rem calc(0.75rem + 0px) 0.5rem;
+    border-right: 3px solid transparent;
+  }
+
+  .PageContent nav button:hover,
+  .PageContent nav button.Active:hover {
+    background-color: #c6c6c663;
+  }
+
+  .PageContent nav button.Active {
+    color: #222;
+    background-color: transparent;
+    border: none;
+    border-right: 3px solid #c6c6c6;
+    font-family: LeagueSpartanMedium;
+  }
 }

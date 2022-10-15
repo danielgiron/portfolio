@@ -52,40 +52,46 @@ function Projects(props) {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="Header SlideElem">Tech Stack</div>
-      <p className="SlideElem">
-        I've picked up a few tips and tricks along the way on my journey to
-        become a web developer. Immediately below are some of the technologies I
-        have worked with so far.
-      </p>
-      <div className="Technologies SlideElem">
-        {allIcons.map((tech) => {
-          return (
-            <div className="Tech SlideElem" key={tech.name}>
-              <img src={tech.svg} className="icon" alt={tech.name} />
-              <div className="label">{tech.name}</div>
-            </div>
-          );
-        })}
-      </div>
+      <section>
+        <div className="Header SlideElem">Tech Stack</div>
+        <p className="SlideElem">
+          I've picked up a few tips and tricks along the way on my journey to
+          become a web developer. Immediately below are some of the technologies
+          I have worked with so far.
+        </p>
+        <div className="Technologies SlideElem">
+          {allIcons.map((tech) => {
+            return (
+              <div className="Tech SlideElem" key={tech.name}>
+                <img src={tech.svg} className="icon" alt={tech.name} />
+                <div className="label">{tech.name}</div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      <section>
+        <div className="Header SlideElem">The Projects</div>
+        <p className="SlideElem">
+          Listed in chronological order, here are the larger and significant
+          projects that I have—just about—completed thus far.
+        </p>
+        <p>(Spoiler alert, this portfolio site is the last on the list)</p>
 
-      <div className="Header SlideElem">The Projects</div>
-      <p className="SlideElem">
-        Listed in chronological order, here are the larger and significant
-        projects that I have—just about—completed thus far.
-      </p>
-      <p>(Spoiler alert, this portfolio site is the last on the list)</p>
-
-      <ProjectDisplay />
-
-      <div className="Header SlideElem">The Future</div>
-      <p>In the future I plan on learning more or working on the following:</p>
-      <ul>
-        <li>Jasmine</li>
-        <li>CSS Preprocessors</li>
-        <li>Open Source Projects + Contributions</li>
-        <li>More on Three.js</li>
-      </ul>
+        <ProjectDisplay />
+      </section>
+      <section>
+        <div className="Header SlideElem">The Future</div>
+        <p>
+          In the future I plan on learning more or working on the following:
+        </p>
+        <ul>
+          <li>Jasmine</li>
+          <li>CSS Preprocessors</li>
+          <li>Open Source Projects + Contributions</li>
+          <li>More on Three.js</li>
+        </ul>
+      </section>
     </motion.div>
   );
 }

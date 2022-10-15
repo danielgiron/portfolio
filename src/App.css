@@ -2,8 +2,15 @@
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
+  background-color: #d7e4e2;
+  /* background-color: #20363a; */
 }
 
-.App .ThreeJSFiber_Canvas {
-  background-color: #d7e4e2;
+@media (min-width: 1024px) {
+  .App .ThreeJSFiber_Canvas {
+    max-height: 700px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-18%);
+  }
 }

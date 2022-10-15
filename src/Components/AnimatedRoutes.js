@@ -7,6 +7,7 @@ import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 import Projects from "../Pages/Projects";
+import Gallery from "../Pages/Gallery";
 
 function AnimatedRoutes(props) {
   return (
@@ -18,6 +19,7 @@ function AnimatedRoutes(props) {
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />}></Route>
         </Route>
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </AnimatePresence>
   );

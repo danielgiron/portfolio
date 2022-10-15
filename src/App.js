@@ -24,8 +24,7 @@ function App() {
   return (
     <div className="App" id="App">
       <AnimatedRoutes theme={theme} />
-
-      <Torus theme={theme} />
+      {window.location.pathname !== "/gallery" ? <Torus theme={theme} /> : null}
     </div>
   );
 }

@@ -10,46 +10,48 @@ function Nav(props) {
   return (
     <nav>
       <button
-        // className={`${page === "home" ? "Active" : ""}`}
         className={`${path === "/home" || path === "/" ? "Active" : ""}`}
         onClick={() => {
-          // setPage("home");
           navigate("/home");
-          scrollToPage();
+          setTimeout(() => {
+            scrollToPage();
+          }, 50);
         }}
       >
         Home
       </button>
       <button
-        // className={`${page === "about" ? "Active" : ""}`}
         className={`${path === "/about" ? "Active" : ""}`}
         onClick={() => {
           navigate("/about");
-          // setPage("about");
-          scrollToPage();
+
+          setTimeout(() => {
+            scrollToPage();
+          }, 50);
         }}
       >
         About
       </button>
 
       <button
-        // className={`${page === "projects" ? "Active" : ""}`}
         className={`${path === "/projects" ? "Active" : ""}`}
         onClick={() => {
           // setPage("projects");
           navigate("/projects");
-          scrollToPage();
+          setTimeout(() => {
+            scrollToPage();
+          }, 50);
         }}
       >
         Projects
       </button>
       <button
-        // className={`${page === "contact" ? "Active" : ""}`}
         className={`${path === "/contact" ? "Active" : ""}`}
         onClick={() => {
-          // setPage("contact");
           navigate("/contact");
-          scrollToPage();
+          setTimeout(() => {
+            scrollToPage();
+          }, 50);
         }}
       >
         Contact

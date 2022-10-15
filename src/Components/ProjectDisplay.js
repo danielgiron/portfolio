@@ -18,12 +18,12 @@ function ProjectDisplay(props) {
 
   return (
     <div className="ProjectDisplay">
-      <ul className="ProjectList">
+      <ul className="ProjectList SlideElem">
         <li
           ref={macrosRef}
           className={`Project ${
             activeProject === "macros" ? "Active" : "Hidden"
-          }`}
+          } `}
         >
           <button
             onClick={() => {
@@ -44,7 +44,7 @@ function ProjectDisplay(props) {
           ref={taskyRef}
           className={`Project ${
             activeProject === "tasky" ? "Active" : "Hidden"
-          }`}
+          } `}
         >
           <button
             onClick={() => {
@@ -63,7 +63,7 @@ function ProjectDisplay(props) {
           ref={portfolioRef}
           className={`Project ${
             activeProject === "portfolio" ? "Active" : "Hidden"
-          }`}
+          } `}
         >
           <button
             onClick={() => {

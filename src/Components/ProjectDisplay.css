@@ -38,6 +38,7 @@
   transform: translate(-50%, -50%) rotate(45deg);
   transform-origin: center;
   transition: all 200ms;
+  transition-delay: 300ms;
 }
 
 .Project.Active .arrow {
