@@ -8,6 +8,9 @@ import { blankTheme, macrosTheme, taskyTheme } from "./Themes";
 import "./App.css";
 
 function App() {
+  if (window.location.pathname === "/") {
+    window.location.pathname = "/home";
+  }
   const [theme, setTheme] = useState(taskyTheme);
 
   function randomTheme() {
