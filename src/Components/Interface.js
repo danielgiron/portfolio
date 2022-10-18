@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Outlet } from "react-router-dom";
+import { shiftTorus } from "../Animations";
 import Typewriter from "typewriter-effect";
 
 import Nav from "./Nav";
@@ -30,6 +31,8 @@ function Interface(props) {
         setYP(e.clientY);
       };
     }
+
+    shiftTorus();
   }, []);
 
   const colorSwatch = [theme.ambientLight_color, theme.fog_color];
@@ -107,11 +110,9 @@ function Interface(props) {
         <Nav page={page} setPage={setPage} scrollToPage={scrollToPage} />
       </div>
 
-      <div className="PageContent" ref={pageRef}>
+      <div className="PageContent" ref={pageRef} id="PageContentTray">
         {window.location.pathname !== "/" ? (
-          <>
-            <Nav page={page} setPage={setPage} scrollToPage={scrollToPage} />
-          </>
+          <Nav page={page} setPage={setPage} scrollToPage={scrollToPage} />
         ) : null}
         <Outlet />
         {/* Page component passed in from AnimatedRoutes router */}

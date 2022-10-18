@@ -9,6 +9,7 @@ function Nav(props) {
   const path = location.pathname;
   return (
     <nav>
+      <div className="Name">Baldwin Giron</div>
       <button
         className={`${path === "/home" || path === "/" ? "Active" : ""}`}
         onClick={() => {
