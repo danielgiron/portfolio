@@ -40,6 +40,7 @@ function Torus(props) {
   return (
     <Canvas
       className="ThreeJSFiber_Canvas"
+      id="TorusCanvas"
       camera={{ position: [0, 0, 10], fov: 70 }}
     >
       <ambientLight

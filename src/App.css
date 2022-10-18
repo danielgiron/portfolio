@@ -7,10 +7,15 @@
 }
 
 @media (min-width: 1024px) {
-  .App .ThreeJSFiber_Canvas {
+  .App #TorusCanvas {
     max-height: 700px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%) translateX(-18%);
+    transition: all 1s;
+  }
+
+  .App #TorusCanvas.Shift {
+    transform: translateY(-50%) translateX(18%);
   }
 }
