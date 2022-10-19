@@ -570,6 +570,7 @@ p {
   }
 
   .PageContent nav .Name {
+    display: block;
     width: 100%;
     padding: 2rem 1rem;
     padding-top: calc(2rem + 3px);
