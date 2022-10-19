@@ -383,6 +383,10 @@ p {
   display: none;
 }
 
+.PageContent nav .Name {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .designElement {
     display: block;
