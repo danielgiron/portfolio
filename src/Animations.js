@@ -16,7 +16,7 @@ export function slideIn() {
   });
 }
 
-export function shiftTorus() {
+export function shiftTorusOnScroll() {
   const TorusCanvas = document.querySelector("#TorusCanvas");
   const PageContentTray = document.querySelector("#PageContentTray");
 
