@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Outlet } from "react-router-dom";
-import { shiftTorus } from "../Animations";
+import { shiftTorusOnScroll } from "../Animations";
 import Typewriter from "typewriter-effect";
 
 import Nav from "./Nav";
@@ -12,26 +12,21 @@ function Interface(props) {
   const pageRef = useRef(null);
   const [page, setPage] = useState("home");
 
-  const [posX, setPosX] = useState(0);
-  const [posY, setPosY] = useState(0);
-
   const windowWidth = window.innerWidth;
   const windowHeight = window.innerHeight;
 
-  const [XP, setXP] = useState(0);
-  const [YP, setYP] = useState(0);
+  // tracking mouse position for animated bar decorations
+  const [XPos, setXPos] = useState(0);
+  const [YPos, setYPos] = useState(0);
 
   useEffect(() => {
     if (windowWidth >= 1024) {
       onmousemove = function (e) {
-        setPosX(e.clientX);
-        setPosY(e.clientY);
-
-        setXP(e.clientX);
-        setYP(e.clientY);
+        setXPos(e.clientX);
+        setYPos(e.clientY);
       };
     }
-    shiftTorus();
+    shiftTorusOnScroll();
   }, []);
 
   const colorSwatch = [theme.ambientLight_color, theme.fog_color];
@@ -50,14 +45,13 @@ function Interface(props) {
     <div className="Interface">
       <div className="Cover">
         <div className="designElement" />
-        {/* <div className="designElement2">{`${posX}x${posY}`}</div> */}
 
         <div className="Bars">
           <div className="XP">
             <div
               className="XPBar"
               style={{
-                width: `${((XP / windowWidth) * 100).toFixed(1)}%`,
+                width: `${((XPos / windowWidth) * 100).toFixed(1)}%`,
               }}
             />
           </div>{" "}
@@ -65,7 +59,7 @@ function Interface(props) {
             <div
               className="YPBar"
               style={{
-                width: `${((YP / windowHeight) * 100).toFixed(1)}%`,
+                width: `${((YPos / windowHeight) * 100).toFixed(1)}%`,
               }}
             />
           </div>
