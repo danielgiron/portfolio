@@ -23,8 +23,6 @@ function Interface(props) {
 
   useEffect(() => {
     if (windowWidth >= 1024) {
-      shiftTorus();
-
       onmousemove = function (e) {
         setPosX(e.clientX);
         setPosY(e.clientY);
@@ -33,6 +31,7 @@ function Interface(props) {
         setYP(e.clientY);
       };
     }
+    shiftTorus();
   }, []);
 
   const colorSwatch = [theme.ambientLight_color, theme.fog_color];
