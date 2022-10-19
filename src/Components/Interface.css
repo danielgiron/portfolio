@@ -322,6 +322,10 @@ p {
   border-left: 5px solid white;
 }
 
+.Tech .icon {
+  max-height: 24px;
+}
+
 .Tech .label {
   padding-top: 5px;
   font-size: 1rem;
