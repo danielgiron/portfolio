@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { slideIn } from "../Animations";
+import "./Projects.css";
 import "../Animations.css";
 
 import ProjectDisplay from "../Components/ProjectDisplay";

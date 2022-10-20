@@ -44,20 +44,18 @@ function Interface(props) {
   return (
     <div className="Interface">
       <div className="Cover">
-        <div className="designElement" />
-
         <div className="Bars">
-          <div className="XP">
+          <div className="XPos">
             <div
-              className="XPBar"
+              className="XPosBar"
               style={{
                 width: `${((XPos / windowWidth) * 100).toFixed(1)}%`,
               }}
             />
           </div>{" "}
-          <div className="YP">
+          <div className="YPos">
             <div
-              className="YPBar"
+              className="YPosBar"
               style={{
                 width: `${((YPos / windowHeight) * 100).toFixed(1)}%`,
               }}

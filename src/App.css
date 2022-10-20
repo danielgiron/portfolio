@@ -24,6 +24,6 @@
   }
 
   .App #TorusCanvas.Shift {
-    transform: translateY(-50%) translateX(18%);
+    transform: translateY(-50%) translateX(20%);
   }
 }

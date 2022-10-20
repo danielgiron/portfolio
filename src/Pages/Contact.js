@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "./Contact.css";
 
 function Contact(props) {
   const encEmail = "ZGFuaWVsZ2lyb245NkBnbWFpbC5jb20=";
@@ -19,26 +20,28 @@ function Contact(props) {
           opportunities, feel free to email me using the links below.
         </p>
 
-        <a
-          className="Mail Co"
-          onClick={() => {
-            window.location.href = `mailto:${atob(
-              encEmail
-            )}?subject=Let's Collaborate!`;
-          }}
-        >
-          Let's Collaborate!
-        </a>
-        <a
-          className="Mail Op"
-          onClick={() => {
-            window.location.href = `mailto:${atob(
-              encEmail
-            )}?subject=Career Opportunity`;
-          }}
-        >
-          Career Opportunity!
-        </a>
+        <div className="ContactButtons">
+          <a
+            className="Mail Co"
+            onClick={() => {
+              window.location.href = `mailto:${atob(
+                encEmail
+              )}?subject=Let's Collaborate!`;
+            }}
+          >
+            Let's Collaborate!
+          </a>
+          <a
+            className="Mail Op"
+            onClick={() => {
+              window.location.href = `mailto:${atob(
+                encEmail
+              )}?subject=Career Opportunity`;
+            }}
+          >
+            Career Opportunity!
+          </a>
+        </div>
       </section>
     </motion.div>
   );
