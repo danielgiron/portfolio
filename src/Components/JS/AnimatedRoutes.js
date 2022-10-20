@@ -3,11 +3,11 @@ import { Route, Routes } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 import Interface from "./Interface";
-import Home from "../Pages/Home";
-import About from "../Pages/About";
-import Contact from "../Pages/Contact";
-import Projects from "../Pages/Projects";
-import Gallery from "../Pages/Gallery";
+import Home from "../../Pages/JS/Home";
+import About from "../../Pages/JS/About";
+import Contact from "../../Pages/JS/Contact";
+import Projects from "../../Pages/JS/Projects";
+import Gallery from "../../Pages/JS/Gallery";
 
 function AnimatedRoutes(props) {
   return (

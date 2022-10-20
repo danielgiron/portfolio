@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./Contact.css";
+import "../CSS/Contact.css";
 
 function Contact(props) {
   const encEmail = "ZGFuaWVsZ2lyb245NkBnbWFpbC5jb20=";

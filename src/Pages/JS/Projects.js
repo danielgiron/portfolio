@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import { slideIn } from "../Animations";
-import "./Projects.css";
-import "../Animations.css";
+import { slideIn } from "../../Animations";
+import "../CSS/Projects.css";
+import "../../Animations.css";
 
-import ProjectDisplay from "../Components/ProjectDisplay";
+import ProjectDisplay from "../../Components/ProjectDisplay";
 
 import {
   html,
@@ -21,7 +21,7 @@ import {
   netlify,
   bootstrap,
   threejs,
-} from "../media/icons/techObjs";
+} from "../../media/icons/techObjs";
 
 function Projects(props) {
   const allIcons = [

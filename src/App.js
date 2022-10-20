@@ -1,8 +1,6 @@
-import AnimatedRoutes from "./Components/AnimatedRoutes";
+import AnimatedRoutes from "./Components/JS/AnimatedRoutes";
 import Torus from "./ThreeJS/Torus";
-
 import { useEffect, useState } from "react";
-
 import { blankTheme, macrosTheme, taskyTheme } from "./Themes";
 
 import "./App.css";

@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Outlet } from "react-router-dom";
-import { shiftTorusOnScroll } from "../Animations";
+import { shiftTorusOnScroll } from "../../Animations";
 import Typewriter from "typewriter-effect";
 
 import Nav from "./Nav";
 
-import "./Interface.css";
+import "../CSS/Interface.css";
 
 function Interface(props) {
   const { theme } = props;

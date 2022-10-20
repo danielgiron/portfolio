@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react";
-import "./ProjectDisplay.css";
+// import "../CSS/ProjectDisplay.css";
+import "../Components/CSS/ProjectDisplay.css";
 
-import ProjectMacros from "../Pages/ProjectMacros";
-import ProjectTasky from "../Pages/ProjectTasky";
+import ProjectMacros from "../Pages/JS/ProjectMacros";
+import ProjectTasky from "../Pages/JS/ProjectTasky";
 
 function ProjectDisplay(props) {
   const [activeProject, setActiveProject] = useState("unset");

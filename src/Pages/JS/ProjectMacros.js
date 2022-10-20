@@ -1,7 +1,8 @@
 import React from "react";
-import ImageCarousel from "../Components/ImageCarousel";
-import { macrosSlides } from "../Slides";
-import { html, css, javascript, react } from "../media/icons/techObjs";
+// import ImageCarousel from "../../Components/JS/ImageCarousel";
+import ImageCarousel from "../../Components/JS/ImageCarousel";
+import { macrosSlides } from "../../Slides";
+import { html, css, javascript, react } from "../../media/icons/techObjs";
 
 function ProjectMacros(props) {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import ImageCarousel from "../Components/ImageCarousel";
-import { taskySlides } from "../Slides";
+import ImageCarousel from "../../Components/JS/ImageCarousel";
+import { taskySlides } from "../../Slides";
 import {
   html,
   css,
@@ -10,7 +10,7 @@ import {
   express,
   redux,
   mongo,
-} from "../media/icons/techObjs";
+} from "../../media/icons/techObjs";
 
 function ProjectTasky(props) {
   return (

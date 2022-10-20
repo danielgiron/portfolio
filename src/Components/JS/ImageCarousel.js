@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
 
-import "./ImageCarousel.css";
+import "../CSS/ImageCarousel.css";
 
-import transparentBackdrop from "../media/transparentBackdrop.png";
+import transparentBackdrop from "../../media/transparentBackdrop.png";
 
 function ImageCarousel(props) {
   const { slides } = props;
