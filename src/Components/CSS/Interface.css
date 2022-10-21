@@ -154,6 +154,10 @@
   /* border: 1px solid white; */
 }
 
+.Cover nav .Name {
+  display: none;
+}
+
 .Cover nav button {
   font-family: LeagueSpartanMedium;
   display: flex;
@@ -205,6 +209,10 @@
   box-sizing: border-box;
 }
 
+.PageContent nav .Name {
+  display: none;
+}
+
 .PageContent nav button {
   font-family: LeagueSpartanLight;
   display: flex;
@@ -246,7 +254,6 @@
   color: #666666;
   font-family: LeagueSpartanLight;
   font-size: 1.2rem;
-  /* text-align: right; */
 }
 
 .Page section {
@@ -286,17 +293,7 @@ p {
   font-size: 1.1rem;
 }
 
-.designElement {
-  display: none;
-}
-
-.Cover nav .Name {
-  display: none;
-}
-
-.PageContent nav .Name {
-  display: none;
-}
+/*/////////////////////////////////////////////////////////////// DESKTOP STYLES: >1024px  */
 
 @media (min-width: 1024px) {
   .Cover .TitleCard {
@@ -318,7 +315,7 @@ p {
     font-size: 1.3rem;
   }
 
-  /*////////////////////////////////////////////////// THEME (COVER) DECORATIONS  */
+  /*/////////////////////////////////////// THEME (COVER) DECORATIONS  */
 
   .Cover .ThemeInfo {
     position: absolute;
@@ -388,7 +385,6 @@ p {
   .Cover nav {
     top: calc(65% - 1rem);
     left: calc(45% + 0rem);
-    /* transform: translate(0, -50%); */
     flex-direction: row;
     gap: 0.5rem;
     width: calc(450px);
@@ -407,15 +403,12 @@ p {
   }
 
   .Cover nav button:hover {
-    /* color: #222; */
     border-bottom: 1px solid white;
   }
 
   .Cover nav button.Active {
     background-color: transparent;
     border-bottom: 2px solid white;
-
-    /* color: #222; */
   }
 
   /***************************************** Page Content */
@@ -463,7 +456,7 @@ p {
   .PageContent nav .Name {
     display: block;
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 2rem 24px 2rem 0px;
     padding-top: calc(2rem + 3px);
     border-bottom: 1px solid #c2c2c2;
     background-color: #efefef;
@@ -471,7 +464,7 @@ p {
     text-align: right;
     line-height: 1.75rem;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: #222;
     font-family: LeagueSpartanMedium;
   }
