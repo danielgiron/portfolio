@@ -1,0 +1,91 @@
+.Disc2Container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: rgb(31, 31, 31); */
+}
+
+.Disc2 {
+  position: absolute;
+
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
+  border: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+
+  background-image: url(./Disc2.svg);
+  background-size: contain;
+  opacity: 0.5;
+  mix-blend-mode: screen;
+  /* -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px); */
+}
+
+#d2_1 {
+  animation: swivel 30s linear 0s infinite;
+  filter: hue-rotate(0deg);
+}
+#d2_2 {
+  animation: swivel 28s linear 0s infinite;
+  filter: hue-rotate(30deg);
+}
+#d2_3 {
+  animation: swivel 26s linear 0s infinite;
+  filter: hue-rotate(60deg);
+}
+#d2_4 {
+  animation: swivel 24s linear 0s infinite;
+  filter: hue-rotate(90deg);
+}
+#d2_5 {
+  animation: swivel 22s linear 0s infinite;
+  filter: hue-rotate(120deg);
+}
+#d2_6 {
+  animation: swivel 20s linear 0s infinite;
+  filter: hue-rotate(150deg);
+}
+#d2_7 {
+  animation: swivel 18s linear 0s infinite;
+  filter: hue-rotate(180deg);
+}
+#d2_8 {
+  animation: swivel 16s linear 0s infinite;
+  filter: hue-rotate(210deg);
+}
+#d2_9 {
+  animation: swivel 14s linear 0s infinite;
+  filter: hue-rotate(240deg);
+}
+#d2_10 {
+  animation: swivel 12s linear 0s infinite;
+  filter: hue-rotate(270deg);
+}
+#d2_11 {
+  animation: swivel 10s linear 0s infinite;
+  filter: hue-rotate(300deg);
+}
+#d2_12 {
+  animation: swivel 8s linear 0s infinite;
+  filter: hue-rotate(330deg);
+}
+
+@keyframes swivel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

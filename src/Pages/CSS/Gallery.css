@@ -1,0 +1,56 @@
+@media (min-width: 1024px) {
+  .Gallery {
+    background-color: #111;
+    width: 100vw;
+    height: 100%;
+    color: #eee;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    overflow-y: scroll;
+  }
+
+  .Gallery .Cover {
+    height: 100vh;
+
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .Gallery .Cover header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title nav";
+    height: min-content;
+    align-items: center;
+    border: 1px solid gold;
+    padding: 0;
+    padding-top: 0;
+  }
+
+  .Gallery .Cover header .Title {
+    grid-area: title;
+    position: relative;
+    right: unset;
+    left: unset;
+    top: unset;
+    font-family: "Blamed";
+    color: #ffe658;
+    font-size: 10rem;
+    -webkit-text-stroke: 1px transparent;
+  }
+
+  .Gallery .Cover header nav {
+    grid-area: nav;
+
+    position: relative;
+    right: unset;
+    left: unset;
+    top: unset;
+    font-size: 1rem;
+    font-family: LeagueSpartanMedium;
+  }
+}

@@ -1,0 +1,42 @@
+.SplitThumbnail {
+  display: flex;
+  height: 150px;
+  width: 150px;
+  padding: 0rem;
+  /* border: 1px solid #eee; */
+  margin: 2rem;
+  overflow: hidden;
+  transform: rotate(-15deg);
+  transition: all 200ms;
+}
+
+.SplitThumbnail img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 250ms;
+}
+.SplitThumbnail .LeftHalf {
+  /* object-position: left; */
+  object-position: 0% 50%;
+  transform: translateY(5%);
+  filter: grayscale(0.5);
+}
+
+.SplitThumbnail .RightHalf {
+  /* object-position: right; */
+  object-position: 100% 50%;
+  transform: translateY(-5%);
+  filter: grayscale(1);
+}
+
+.SplitThumbnail:hover {
+  transform: rotate(0deg);
+}
+
+.SplitThumbnail:hover .LeftHalf,
+.SplitThumbnail:hover .RightHalf {
+  transform: none;
+  filter: none;
+  border: 0px solid transparent;
+}

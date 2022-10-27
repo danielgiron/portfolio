@@ -23,6 +23,22 @@ code {
   font-family: "Prociono";
   src: url(./fonts/Prociono-Regular-webfont.woff) format("woff");
 }
+@font-face {
+  font-family: "LeagueGothic";
+  src: url(./fonts/LeagueGothic-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "LeagueGothicItalic";
+  src: url(./fonts/LeagueGothic-Italic.woff2) format("woff2");
+}
+@font-face {
+  font-family: "LeagueGothicCondensed";
+  src: url(./fonts/LeagueGothic-Condensed.woff2) format("woff2");
+}
+@font-face {
+  font-family: "LeagueGothicItalicCondensed";
+  src: url(./fonts/LeagueGothic-CondensedItalic.woff2) format("woff2");
+}
 
 /* Fonts by Ty Finck  */
 @font-face {
@@ -46,6 +62,12 @@ code {
 @font-face {
   font-family: "LeagueSpartanMedium";
   src: url(./fonts/LeagueSpartan-Medium.woff2) format("woff2");
+}
+
+/* Font by Charles Scott */
+@font-face {
+  font-family: "Blamed";
+  src: url(./fonts/CS\ Blamed.otf) format("opentype");
 }
 
 /*/////////////////////////////////////////////////////////////////////////////// CSS RESET */
