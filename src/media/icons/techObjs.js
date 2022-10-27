@@ -1,5 +1,3 @@
-import React from "react";
-
 import reactSVG from "./react.svg";
 import reduxSVG from "./redux.svg";
 import nodeSVG from "./nodedotjs.svg";

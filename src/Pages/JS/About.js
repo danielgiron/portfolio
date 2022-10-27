@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function About(props) {
   return (
@@ -39,6 +40,8 @@ function About(props) {
           and design in the frontend.
         </p>
       </section>
+      {/* <Link to="../gallery">Gallery Link</Link> */}
+      <a href="https://www.baldwingiron.com/gallery">Gallery</a>
     </motion.div>
   );
 }

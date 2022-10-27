@@ -26,6 +26,7 @@ function ImageCarousel(props) {
               <div className="header">{slide.header}</div>
               <img
                 src={slide.image}
+                alt={`Slide ${index}`}
                 onClick={() => {
                   window.open(slide.image);
                 }}

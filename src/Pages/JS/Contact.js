@@ -17,7 +17,7 @@ function Contact(props) {
         <p>
           Thank you for your interest in reaching out! If you would like to
           collaborate on a project together, or if you're reaching about career
-          opportunities, feel free to email me using the links below.
+          opportunities, feel free to email me using the link below.
         </p>
 
         <div className="ContactButtons">
@@ -29,17 +29,7 @@ function Contact(props) {
               )}?subject=Let's Collaborate!`;
             }}
           >
-            Let's Collaborate!
-          </a>
-          <a
-            className="Mail Op"
-            onClick={() => {
-              window.location.href = `mailto:${atob(
-                encEmail
-              )}?subject=Career Opportunity`;
-            }}
-          >
-            Career Opportunity!
+            Get In Touch
           </a>
         </div>
       </section>
