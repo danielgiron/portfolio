@@ -35,3 +35,23 @@ export function shiftTorusOnScroll() {
 
   observer.observe(PageContentTray);
 }
+
+export function GalleryNavToggle() {
+  const GalleryHero = document.querySelector("#GalleryHero");
+  const GalleryTopNav = document.querySelector("#GalleryTopNav");
+
+  const observer = new IntersectionObserver(
+    (elems) => {
+      elems.forEach((el) => {
+        if (el.isIntersecting) {
+          GalleryTopNav.classList.add("HiddenNav");
+        } else {
+          GalleryTopNav.classList.remove("HiddenNav");
+        }
+      });
+    },
+    { rootMargin: "20px" }
+  );
+
+  observer.observe(GalleryHero);
+}
