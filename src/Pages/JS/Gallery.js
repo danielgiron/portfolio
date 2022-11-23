@@ -9,39 +9,13 @@ import "../CSS/Gallery.css";
 // import randomImg from "../../media/examples/Macros3.png";
 
 import GalleryHero from "../../Components/JS/GalleryHero";
+import DemoCard from "../../Components/JS/DemoCard";
 import { GalleryNavToggle } from "../../Animations";
 
 function Gallery(props) {
-  function positionButton() {
-    // alert(`scrollTo(): ${window.scrollTo()}, offset(): ${window.pageYOffset()}`);
-  }
-
   useEffect(() => {
     const App = document.querySelector(".App");
     App?.classList.add("GalleryContainer");
-    // const Hero = document.querySelector(".Cover");
-    // const header = document.querySelector("header");
-
-    // // Gallery.addEventListener("scroll", (e) => {
-    // //   alert("scroll");
-    // //   console.log(headerBox.top);
-    // // });
-
-    // Gallery.onscroll = function () {
-    //   scrollFunction();
-    // };
-
-    // function scrollFunction() {
-    //   const headerBox = header.getBoundingClientRect();
-
-    //   console.log(headerBox.top);
-
-    //   // if (headerBox.top <= 0) {
-    //   //   header.classList.add("Minified");
-    //   // } else {
-    //   //   header.classList.remove("Minified");
-    //   // }
-    // }
 
     GalleryNavToggle();
   }, []);
@@ -49,12 +23,20 @@ function Gallery(props) {
   return (
     <div className="Gallery">
       <GalleryHero />
-      {/* <SplitThumbnail imgSrc={DiscThumbnail} />
-      <SplitThumbnail imgSrc={randomImg} /> */}
+
       <div id="GalleryTopNav">TopNav</div>
-      <section className="Renders"></section>
-      <section className="CSS/HTML"></section>
-      <section className="Components"></section>
+      <div className="GalleryContent">
+        <section className="Renders">
+          <h2>Renders</h2>
+          <DemoCard />
+        </section>
+        <section className="CSSHTML">
+          <h2>CSS/HTML</h2>
+        </section>
+        <section className="Components">
+          <h2>Components</h2>
+        </section>
+      </div>
     </div>
   );
 }

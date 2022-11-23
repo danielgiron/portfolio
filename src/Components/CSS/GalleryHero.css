@@ -94,6 +94,10 @@
   }
 
   #Cell2 .MyName {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
     font-size: 2rem;
     height: 100%;
     padding-top: 7px;

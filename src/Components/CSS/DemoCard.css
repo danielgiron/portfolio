@@ -1,0 +1,148 @@
+:root {
+  --main-color: #ffe343;
+  --secondary-color: #808080;
+}
+
+.DemoCard {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 650px;
+  height: 300px;
+
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 2rem;
+}
+
+/*///////////////////////////////////////////////////// SLIDES */
+
+.DemoCard .SlideContainer {
+  position: relative;
+  width: calc(100% - 100px);
+  /* border: 1px solid white; */
+}
+
+.DemoCard .Slide {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: calc(100%);
+  width: calc(100% - 0px);
+  opacity: 0;
+  box-sizing: border-box;
+  transition: all 400ms;
+}
+
+.DemoCard .Slide.Active {
+  top: 0%;
+  opacity: 1;
+  transition: all 400ms;
+}
+
+/*/ //////////////////////////////////////////////////// CONTROL BUTTONS */
+
+.DemoCard button.Prev,
+.DemoCard button.Next {
+  position: absolute;
+  top: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  transform: translateY(-50%);
+}
+
+.DemoCard button.Prev {
+  left: 0;
+
+  border-top: 3px solid grey;
+  border-left: 3px solid grey;
+  transform: translateY(-50%) rotate(-45deg) translateX(1rem);
+}
+.DemoCard button.Next {
+  right: 0;
+  border-top: 3px solid grey;
+  border-right: 3px solid grey;
+  transform: translateY(-50%) rotate(45deg) translateX(-1rem);
+}
+
+.DisabledButton {
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/*///////////////////////////////////////////////////// FIRST SLIDE */
+
+.DemoCard #Slide1 .TextContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 70%;
+  padding-left: 10%;
+  padding-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  background-color: rgba(255, 255, 255, 0.502);
+  z-index: 1;
+}
+
+.DemoCard #Slide1 .SlideTitle {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  font-family: LeagueSpartanMedium;
+
+  padding: 0.5rem;
+  padding-bottom: 3px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+
+  background-color: rgb(255, 204, 0);
+
+  width: max-content;
+}
+
+.DemoCard #Slide1 .SlideBody {
+  font-size: 1.2rem;
+  color: grey;
+  line-height: 1.2rem;
+  font-family: LeagueSpartanLight;
+  margin-right: 1rem;
+}
+
+.DemoCard #Slide1 .ImageContainer {
+  height: 100%;
+  width: 40%;
+  padding: 1rem;
+}
+
+.DemoCard #Slide1 .ImageContainer img {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  max-width: 35%;
+  filter: drop-shadow(0px 0px 20px rgba(30, 37, 56, 0.424));
+  border: 1px solid white;
+  z-index: 2;
+}
+
+/*/ //////////////////////////////////////////////////// IMAGES (2nd) SLIDE */
+
+.DemoCard .Thumbnails {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  height: 150px;
+  overflow-x: scroll;
+}
+
+.DemoCard .Thumbnails img {
+  max-height: 100%;
+}
