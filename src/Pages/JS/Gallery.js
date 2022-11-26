@@ -10,6 +10,7 @@ import "../CSS/Gallery.css";
 
 import GalleryHero from "../../Components/JS/GalleryHero";
 import DemoCard from "../../Components/JS/DemoCard";
+import DemoCard2 from "../../Components/JS/DemoCard2";
 import { GalleryNavToggle } from "../../Animations";
 
 function Gallery(props) {
@@ -29,9 +30,12 @@ function Gallery(props) {
         <section className="Renders">
           <h2>Renders</h2>
           <DemoCard />
+          <DemoCard2 />
         </section>
         <section className="CSSHTML">
           <h2>CSS/HTML</h2>
+          <DemoCard />
+          <DemoCard />
         </section>
         <section className="Components">
           <h2>Components</h2>

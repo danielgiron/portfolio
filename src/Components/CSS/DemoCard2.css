@@ -1,0 +1,102 @@
+:root {
+  --main-color: #ffe343;
+  --secondary-color: #808080;
+}
+
+.DemoCard2 {
+  position: relative;
+  display: grid;
+  grid-template-rows: 40px auto;
+
+  width: 650px;
+  height: 300px;
+
+  overflow: hidden;
+  margin: 2rem;
+  /* border: 1px solid red; */
+}
+
+.DemoCard2 .Controls {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+}
+
+.DemoCard2 .Controls button {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+
+  padding: 0;
+  margin: 0;
+
+  height: 100%;
+  width: 20%;
+
+  font-size: 1rem;
+  background-color: #222;
+  border: 1px solid #222;
+  border-bottom: none;
+  box-sizing: border-box;
+  /* border: 1px solid gold; */
+}
+
+.DemoCard2 .Controls button.Active {
+  background-color: var(--main-color);
+  color: #222;
+}
+
+.ViewContainer {
+  font-size: 1rem;
+  position: relative;
+  border: 1px solid #222;
+}
+
+/*/////////////////////////////////////// First View */
+
+#View1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+}
+
+#View1 .TextContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  padding: 1rem;
+
+  color: #222;
+  background-color: rgb(245, 245, 245);
+  z-index: 1;
+}
+
+/*/ ////////////////////////////////////// Second View */
+
+#View2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+#View2 .Thumbnails {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  gap: 1rem;
+}
+
+#View2 .Thumbnails img {
+  max-height: 150px;
+}

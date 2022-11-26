@@ -39,10 +39,12 @@
   .Gallery section {
     position: relative;
     width: 100%;
-    height: 300px;
+
     margin-bottom: 1rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
     /* border-top: 2px solid var(--secondary-color); */
   }
 
