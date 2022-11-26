@@ -4,6 +4,7 @@ import "../CSS/DemoCard2.css";
 import D4 from "../../media/gallery/images/D4.png";
 
 function DemoCard2(props) {
+  const { v1Title, v1Body, v2Title, v2Body, Thumbnails } = { props };
   const [Index, setIndex] = useState(1);
 
   const AboutView = (
@@ -80,6 +81,10 @@ function DemoCard2(props) {
         </button>
       </div>
       <div className="ViewContainer">{returnView()}</div>
+      <div className="Tags">
+        <span>Render</span>
+        <span>Design</span>
+      </div>
     </div>
   );
 }
