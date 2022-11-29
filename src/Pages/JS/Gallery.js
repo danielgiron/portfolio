@@ -9,9 +9,10 @@ import "../CSS/Gallery.css";
 // import randomImg from "../../media/examples/Macros3.png";
 
 import GalleryHero from "../../Components/JS/GalleryHero";
-import DemoCard from "../../Components/JS/DemoCard";
 import DemoCard2 from "../../Components/JS/DemoCard2";
 import { GalleryNavToggle } from "../../Animations";
+
+import D4 from "../../media/gallery/images/D4.png";
 
 function Gallery(props) {
   useEffect(() => {
@@ -29,16 +30,25 @@ function Gallery(props) {
       <div className="GalleryContent">
         <section className="Renders">
           <h2>Renders</h2>
-          <DemoCard />
+          <DemoCard2
+            v1Title="Disarray"
+            v1Body="Rendering of the word 'Disarray' using Womp3d"
+            v2Title="Thumbnails"
+            v2Body="Different views and textures of Disarray"
+            images={[D4]}
+            tags={["Render", "Design", "Womp3d"]}
+          />
           <DemoCard2 />
         </section>
         <section className="CSSHTML">
           <h2>CSS/HTML</h2>
-          <DemoCard />
-          <DemoCard />
+          <DemoCard2 />
+          <DemoCard2 />
         </section>
         <section className="Components">
           <h2>Components</h2>
+          <DemoCard2 />
+          <DemoCard2 />
         </section>
       </div>
     </div>

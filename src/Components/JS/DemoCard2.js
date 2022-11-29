@@ -4,15 +4,24 @@ import "../CSS/DemoCard2.css";
 import D4 from "../../media/gallery/images/D4.png";
 
 function DemoCard2(props) {
-  const { v1Title, v1Body, v2Title, v2Body, Thumbnails } = { props };
+  const { v1Title, v1Body, v2Title, v2Body, images, tags } = props;
   const [Index, setIndex] = useState(1);
+
+  const thumbnails = images?.map((img, index) => {
+    return <img src={img} key={index} />;
+  });
+  const tagList = tags?.map((tag, index) => {
+    return <span key={index}>{tag}</span>;
+  });
 
   const AboutView = (
     <div className={`View`} id="View1">
       <div className="TextContainer">
-        <div className="ViewTitle">Component Name</div>
+        <div className="ViewTitle">{v1Title ? v1Title : "Title One"}</div>
         <div className="ViewBody">
-          This is where a simple description will go for your DemoCard
+          {v1Body
+            ? v1Body
+            : "This is where a simple description will go for your DemoCard"}
         </div>
       </div>
 
@@ -24,21 +33,21 @@ function DemoCard2(props) {
 
   const MoreView = (
     <div className={`View`} id="View2">
-      <div className="ViewTitle">Thumbnails</div>
+      <div className="ViewTitle">{v2Title ? v2Title : "Thumbnails"}</div>
       <div className="ViewBody">
-        This is where a simple description will go for your DemoCard
+        {v2Body ? v2Body : "A short message for the second slide"}
       </div>
-      <div className="Thumbnails">
-        <img src={D4} />
-        <img src={D4} />
-        <img src={D4} />
-      </div>
+      <div className="Thumbnails">{thumbnails}</div>
     </div>
   );
 
   const SourceView = (
     <div className={`View`} id="View3">
-      <div className="ViewTitle">Source</div>
+      <div className="ViewTitle">Source Info</div>
+      <div className="ViewBody">
+        Coming soon! For more on this entry or how to use it, send me a message
+        via the Contact link above.
+      </div>
     </div>
   );
 
@@ -81,10 +90,7 @@ function DemoCard2(props) {
         </button>
       </div>
       <div className="ViewContainer">{returnView()}</div>
-      <div className="Tags">
-        <span>Render</span>
-        <span>Design</span>
-      </div>
+      <div className="Tags">{tagList}</div>
     </div>
   );
 }
