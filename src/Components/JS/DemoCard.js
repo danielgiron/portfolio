@@ -1,90 +1,103 @@
-//import { BrowserRouter, Route, Routes, Link, useParams } from 'react-router-dom';
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../CSS/DemoCard.css";
 
-import D4 from "../../media/gallery/images/D4.png";
+// import D4 from "../../media/gallery/images/D4.png";
 
 function DemoCard(props) {
-  const [liveIndex, setLiveIndex] = useState(1);
-  const [prevDisabled, disablePrev] = useState(true);
-  const [nextDisabled, disableNext] = useState(false);
+  const { v1Title, v1Body, v2Title, v2Body, images, tags } = props;
+  const [Index, setIndex] = useState(1);
 
-  function keepWithinBounds(index, action) {
-    if (
-      (index === 1 && action == "decrement") ||
-      (index === 3 && action === "increment")
-    ) {
-      return index;
-    } else {
-      if (action === "increment") {
-        return index + 1;
-      } else {
-        return index - 1;
-      }
-    }
-  }
+  const thumbnails = images?.map((img, index) => {
+    return (
+      <img
+        src={img}
+        key={index}
+        alt={`Thumbnail ${index}`}
+        onClick={() => {
+          window.open(img);
+        }}
+      />
+    );
+  });
+  const tagList = tags?.map((tag, index) => {
+    return <span key={index}>{tag}</span>;
+  });
 
-  function prevClick() {
-    const slideInView = keepWithinBounds(liveIndex, "decrement");
-    setLiveIndex(slideInView);
-  }
-
-  function nextClick() {
-    const slideInView = keepWithinBounds(liveIndex, "increment");
-    setLiveIndex(slideInView);
-  }
-
-  useEffect(() => {
-    if (liveIndex === 1) {
-      disablePrev(true);
-      disableNext(false);
-    } else if (liveIndex === 3) {
-      disablePrev(false);
-      disableNext(true);
-    } else {
-      disablePrev(false);
-      disableNext(false);
-    }
-  }, [liveIndex]);
-
-  return (
-    <div className="DemoCard">
-      <div className="SlideContainer">
-        <div className={`Slide ${liveIndex === 1 ? "Active" : ""}`} id="Slide1">
-          <div className="TextContainer">
-            <div className="SlideTitle">Component Name</div>
-            <div className="SlideBody">
-              This is where a simple description will go for your DemoCard
-            </div>
-          </div>
-
-          <div className="ImageContainer">
-            <img src={D4} />
-          </div>
-        </div>
-
-        <div className={`Slide ${liveIndex === 2 ? "Active" : ""}`} id="Slide2">
-          <div className="SlideTitle">Thumbnails</div>
-          <div className="Thumbnails">
-            <img src={D4} />
-            <img src={D4} />
-            <img src={D4} />
-          </div>
-        </div>
-
-        <div className={`Slide ${liveIndex === 3 ? "Active" : ""}`} id="Slide3">
-          <div className="SlideTitle">Source</div>
+  const AboutView = (
+    <div className={`View`} id="View1">
+      <div className="TextContainer">
+        <div className="ViewTitle">{v1Title ? v1Title : "Title One"}</div>
+        <div className="ViewBody">
+          {v1Body
+            ? v1Body
+            : "This is where a simple description will go for your DemoCard"}
         </div>
       </div>
 
-      <button
-        className={`Prev ${prevDisabled ? "DisabledButton" : ""}`}
-        onClick={prevClick}
-      />
-      <button
-        className={`Next ${nextDisabled ? "DisabledButton" : ""}`}
-        onClick={nextClick}
-      />
+      <div className="ImageContainer">{thumbnails ? thumbnails[0] : ""}</div>
+    </div>
+  );
+
+  const MoreView = (
+    <div className={`View`} id="View2">
+      <div className="ViewTitle">{v2Title ? v2Title : "Thumbnails"}</div>
+      <div className="ViewBody">
+        {v2Body ? v2Body : "A short message for the second slide"}
+      </div>
+      <div className="Thumbnails">{thumbnails}</div>
+    </div>
+  );
+
+  const SourceView = (
+    <div className={`View`} id="View3">
+      <div className="ViewTitle">Source Info</div>
+      <div className="ViewBody">
+        Coming soon! For more on this entry or how to use it, send me a message
+        via the Contact link above.
+      </div>
+    </div>
+  );
+
+  function returnView() {
+    if (Index === 1) {
+      return AboutView;
+    } else if (Index === 2) {
+      return MoreView;
+    } else {
+      return SourceView;
+    }
+  }
+
+  return (
+    <div className="DemoCard">
+      <div className="Controls">
+        <button
+          className={`${Index === 1 ? "Active" : ""}`}
+          onClick={() => {
+            setIndex(1);
+          }}
+        >
+          About
+        </button>
+        <button
+          className={`${Index === 2 ? "Active" : ""}`}
+          onClick={() => {
+            setIndex(2);
+          }}
+        >
+          More
+        </button>
+        <button
+          className={`${Index === 3 ? "Active" : ""}`}
+          onClick={() => {
+            setIndex(3);
+          }}
+        >
+          Source
+        </button>
+      </div>
+      <div className="ViewContainer">{returnView()}</div>
+      <div className="Tags">{tagList}</div>
     </div>
   );
 }
