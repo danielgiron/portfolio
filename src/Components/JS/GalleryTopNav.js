@@ -33,27 +33,27 @@ function GalleryTopNav(props) {
           <a href="https://www.baldwingiron.com/contact">Contact</a>
         </div>
         <div className="Here">
-          <span
+          <a
             onClick={() => {
               scrollToSection(RenderSection);
             }}
           >
             Renders
-          </span>
-          <span
+          </a>
+          <a
             onClick={() => {
               scrollToSection(CssHtmlSection);
             }}
           >
             CSS/HTML
-          </span>
-          <span
+          </a>
+          <a
             onClick={() => {
               scrollToSection(ComponentsSection);
             }}
           >
             Components
-          </span>
+          </a>
         </div>
       </nav>
     </div>

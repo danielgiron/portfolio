@@ -45,13 +45,13 @@
   max-height: 40px;
 }
 
-.Gallery #GalleryTopNav nav span,
+/* .Gallery #GalleryTopNav nav span, */
 .Gallery #GalleryTopNav nav a {
   position: relative;
   cursor: pointer;
 }
 
-.Gallery #GalleryTopNav nav span::after,
+/* .Gallery #GalleryTopNav nav span::after, */
 .Gallery #GalleryTopNav nav a::after {
   content: "";
   position: absolute;
@@ -63,11 +63,20 @@
   transition: all 200ms;
 }
 
-.Gallery #GalleryTopNav nav span:hover::after,
+/* .Gallery #GalleryTopNav nav span:hover::after, */
 .Gallery #GalleryTopNav nav a:hover::after {
   width: 100%;
 }
 
-.Gallery #GalleryTopNav nav .Here span {
+.Gallery #GalleryTopNav nav .Here a {
   color: var(--main-color);
+  font-family: LeagueSpartanLight;
+}
+
+/*///////////////////////////////////// Mobile View  */
+
+@media (max-width: 1024px) {
+  .Gallery #GalleryTopNav {
+    display: none;
+  }
 }

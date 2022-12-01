@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "../CSS/DemoCard.css";
 
-// import D4 from "../../media/gallery/images/D4.png";
-
 function DemoCard(props) {
   const { v1Title, v1Body, v2Title, v2Body, images, tags } = props;
   const [Index, setIndex] = useState(1);
@@ -13,6 +11,7 @@ function DemoCard(props) {
         src={img}
         key={index}
         alt={`Thumbnail ${index}`}
+        // open expanded image in new tab
         onClick={() => {
           window.open(img);
         }}

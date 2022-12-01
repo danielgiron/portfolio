@@ -176,3 +176,101 @@
 #View3 {
   padding: 1rem;
 }
+
+/*/ /////////////////////////////////////////////////////////////// Mobile Styles */
+
+@media (max-width: 1024px) {
+  .DemoCard {
+    grid-template-rows: 30px auto;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .DemoCard .Controls button {
+    border: 1px solid #808080;
+    border-bottom: none !important;
+  }
+
+  .DemoCard .Controls button:first-child {
+    border-right: none;
+  }
+
+  .DemoCard .Controls button:nth-child(2) {
+    border-left: none;
+    border-right: none;
+  }
+
+  .DemoCard .Controls button:hover {
+    border: 1px solid #808080;
+    border-bottom: none !important;
+  }
+
+  .DemoCard .Controls button:first-child:hover {
+    border-right: none;
+  }
+
+  .DemoCard .Controls button:nth-child(2):hover {
+    border-left: none;
+    border-right: none;
+  }
+
+  .DemoCard .ViewContainer {
+    border: 1px solid #808080;
+    border-left: none;
+    border-right: none;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+  }
+
+  .DemoCard .Tags {
+    padding: 0.25rem;
+  }
+
+  /*/////////////////////////////////////// First View */
+
+  #View1 img {
+    opacity: 0.65;
+  }
+
+  #View1 .TextContainer {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgb(250, 250, 250) 40%
+    );
+  }
+
+  #View1 .TextContainer .ViewTitle:after {
+    display: none;
+  }
+
+  #View1 .TextContainer .ViewTitle,
+  #View1 .TextContainer .ViewBody {
+    padding-left: 0.25rem;
+    color: rgb(47, 47, 47);
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0) 0%,
+      rgb(250, 250, 250) 40%
+    );
+  }
+  /*/ ////////////////////////////////////// Second View */
+
+  #View2 .Thumbnails {
+    align-items: center;
+    height: 150px;
+    width: 100%;
+  }
+
+  #View2 .Thumbnails img {
+    max-width: calc(33% - 0.67rem);
+  }
+
+  /*/ ////////////////////////////////////// Third View */
+
+  #View3 {
+    padding: 1rem;
+  }
+}

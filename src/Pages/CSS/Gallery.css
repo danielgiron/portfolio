@@ -95,4 +95,42 @@ a:active {
   font-size: 1rem;
   font-family: LeagueSpartanLight;
   color: #222;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .Gallery section {
+    position: relative;
+    width: 100%;
+
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Gallery section h2 {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: none;
+
+    width: 100%;
+    padding-top: 0.45rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+
+    color: #6b6b6b;
+    font-size: 2rem;
+    text-align: left;
+
+    opacity: 1;
+    border-top: 1px solid #ffffff;
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0) 0%,
+      rgb(250, 250, 250) 40%
+    );
+    /* border: 1px solid #222; */
+  }
 }

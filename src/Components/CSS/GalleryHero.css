@@ -145,6 +145,7 @@
     rgba(0, 0, 0, 0.7) 100%
   );
   z-index: 4;
+  pointer-events: none;
 }
 
 .Gallery .Cover .Display {
@@ -204,4 +205,74 @@
   cursor: pointer;
   text-transform: uppercase;
   font-family: LeagueSpartanMedium;
+}
+
+@media (max-width: 1024px) {
+  .Gallery .Cover {
+    background-image: url("../../media//gallery/images/galleryPhoto.png");
+    height: 70vh;
+    min-height: unset;
+  }
+
+  .Gallery .GridDecoration {
+    height: 100%;
+    grid-template-columns: 2rem 1fr 2rem;
+    grid-template-rows: 2rem 1fr 2rem;
+    background-color: rgba(0, 0, 0, 0.262);
+  }
+
+  #Cell1,
+  #Cell3,
+  #Cell7,
+  #Cell9 {
+    margin: 0.25rem;
+  }
+
+  #Cell5 img#Logo {
+    position: absolute;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    margin: 0rem;
+  }
+
+  #Cell5 img#Logo:hover {
+    -webkit-filter: none;
+    filter: none;
+  }
+
+  #Cell2 .MyName {
+    font-size: 1.5rem;
+  }
+
+  #Cell6 .Boxes {
+    display: none;
+  }
+
+  .Gallery .Cover header {
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: calc(100vw - 0rem);
+    padding: 0;
+    background: unset;
+    z-index: 10;
+  }
+
+  .Gallery .Cover .Display {
+    font-size: 5rem;
+    opacity: 0.9;
+  }
+
+  .Gallery .Cover .Title {
+    font-size: 3rem !important;
+  }
+
+  .Gallery nav {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    background-color: unset;
+  }
 }
