@@ -1,0 +1,73 @@
+:root {
+  --main-color: #ffe343;
+  --secondary-color: #808080;
+}
+
+/*////////////////////////////////////////////////// Top Nav (Pop Up) */
+
+.HiddenNav {
+  top: -100px !important;
+}
+
+.Gallery #GalleryTopNav {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 80px;
+
+  background-color: #222;
+  font-family: LeagueSpartanLight;
+  text-transform: uppercase;
+  transition: all 400ms;
+  z-index: 10;
+}
+
+.Gallery #GalleryTopNav nav {
+  width: 100%;
+  height: 100%;
+  padding: 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  border-bottom: 1px solid black;
+}
+
+.Gallery #GalleryTopNav nav .Main,
+.Gallery #GalleryTopNav nav .Here {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Gallery #GalleryTopNav nav img {
+  max-height: 40px;
+}
+
+.Gallery #GalleryTopNav nav span,
+.Gallery #GalleryTopNav nav a {
+  position: relative;
+  cursor: pointer;
+}
+
+.Gallery #GalleryTopNav nav span::after,
+.Gallery #GalleryTopNav nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -0.15rem;
+  left: 0;
+  height: 1px;
+  width: 0%;
+  background-color: white;
+  transition: all 200ms;
+}
+
+.Gallery #GalleryTopNav nav span:hover::after,
+.Gallery #GalleryTopNav nav a:hover::after {
+  width: 100%;
+}
+
+.Gallery #GalleryTopNav nav .Here span {
+  color: var(--main-color);
+}

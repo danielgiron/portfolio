@@ -59,7 +59,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: 1rem; */
 }
 
 #Cell5 img#Logo {
@@ -76,12 +75,6 @@
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  /* transition: all 100ms; */
-}
-
-#Cell5 img#Logo:hover {
-  -webkit-filter: drop-shadow(0px 0px 20px white);
-  filter: drop-shadow(0px 0px 5px white);
 }
 
 @keyframes Rotating {
@@ -91,6 +84,11 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+#Cell5 img#Logo:hover {
+  -webkit-filter: drop-shadow(0px 0px 20px white);
+  filter: drop-shadow(0px 0px 5px white);
 }
 
 #Cell2 .MyName {
@@ -164,10 +162,10 @@
 }
 
 .Gallery .Cover .Title {
-  /* position: absolute; */
   width: 100%;
   text-align: end;
   z-index: 3;
+  font-size: 4rem !important;
 }
 
 .Gallery nav {
@@ -175,56 +173,35 @@
   left: 0;
   top: unset;
   bottom: 0;
-
   width: 100%;
 }
 
-.Gallery nav ul#MainNav,
-.Gallery nav ul#GalNav {
+.Gallery nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 
   width: 100%;
-  height: 100%;
+
+  padding: 0.25rem;
+  padding-top: calc(0.25rem + 5px);
 
   font-size: 1rem;
-
   list-style: none;
-  padding-left: 0;
-  background-color: #00000041;
+  border-radius: 0.25rem;
+  background-color: #0000005e;
 }
 
-.Gallery nav ul#MainNav {
+.Gallery nav .MainLi {
   color: white;
-  border: 1px solid white;
 }
-.Gallery nav ul#GalNav {
+.Gallery nav .GalleryLi {
   color: var(--main-color);
-  border: 1px solid var(--main-color);
 }
 
-.Gallery nav li {
+.Gallery nav a {
   cursor: pointer;
-  padding: 0.15rem 0.5rem;
   text-transform: uppercase;
   font-family: LeagueSpartanMedium;
-  /* filter: drop-shadow(0px 0px 3px #000); */
-  /* border-radius: 0.35rem; */
-  /* color: white; */
-  /* background-color: #00000041; */
-  /* -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px); */
 }
-
-/* .Gallery nav #MainNav li {
-    border: var(--grid-line-width) solid white;
-    border: 1px solid white;
-    color: white;
-  }
-  .Gallery nav #GalNav li {
-    border: var(--grid-line-width) solid var(--main-color);
-    border: 1px solid var(--main-color);
-    color: var(--main-color);
-  } */

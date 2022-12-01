@@ -3,14 +3,6 @@
   --secondary-color: #808080;
 }
 
-.Gallery {
-  width: 100vw;
-  /* height: 200vh; */
-  color: #fff;
-  font-size: 3rem;
-  letter-spacing: 1px;
-}
-
 a,
 a:visited,
 a:hover,
@@ -21,6 +13,14 @@ a:active {
   color: white;
 }
 
+.Gallery {
+  width: 100vw;
+  /* height: 200vh; */
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
 .GalleryContainer {
   background-color: #eaeaea !important;
   display: flex;
@@ -29,75 +29,6 @@ a:active {
 
 .GalleryContent {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 90 90'%3E%3Ccircle fill='%23EAEAEA' cx='45' cy='45' r='5'/%3E%3Cg fill='%23C1C1C1' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='5'/%3E%3Ccircle cx='90' cy='90' r='5'/%3E%3Ccircle cx='90' cy='0' r='5'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3C/g%3E%3C/svg%3E");
-}
-
-/*////////////////////////////////////////////////// Top Nav (Pop Up) */
-
-.HiddenNav {
-  top: -100px !important;
-}
-
-.Gallery #GalleryTopNav {
-  position: absolute;
-  display: block;
-  top: 0;
-  width: 100%;
-  height: 80px;
-
-  background-color: #222;
-  font-family: LeagueSpartanLight;
-  text-transform: uppercase;
-  transition: all 400ms;
-  z-index: 10;
-}
-
-.Gallery #GalleryTopNav nav {
-  width: 100%;
-  height: 100%;
-  padding: 0rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.1rem;
-  border-bottom: 1px solid black;
-}
-
-.Gallery #GalleryTopNav nav .Main,
-.Gallery #GalleryTopNav nav .Here {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.Gallery #GalleryTopNav nav img {
-  max-height: 40px;
-}
-
-.Gallery #GalleryTopNav nav span,
-.Gallery #GalleryTopNav nav a {
-  position: relative;
-  cursor: pointer;
-}
-
-.Gallery #GalleryTopNav nav span::after,
-.Gallery #GalleryTopNav nav a::after {
-  content: "";
-  position: absolute;
-  bottom: -0.15rem;
-  left: 0;
-  height: 1px;
-  width: 0%;
-  background-color: white;
-  transition: all 200ms;
-}
-
-.Gallery #GalleryTopNav nav span:hover::after,
-.Gallery #GalleryTopNav nav a:hover::after {
-  width: 100%;
-}
-
-.Gallery #GalleryTopNav nav .Here span {
-  color: var(--main-color);
 }
 
 /*/ ///////////////////////////////////////////////// Sections */
@@ -124,4 +55,44 @@ a:active {
   text-transform: uppercase;
   font-size: 3rem;
   opacity: 0.7;
+}
+
+/*/ ///////////////////////////////////////////////// Intro Section */
+
+.Gallery section.Introduction {
+  position: relative;
+  background-color: rgb(246, 246, 246);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Gallery section.Introduction .Card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  padding: 3rem 1rem;
+
+  font-size: 1.2rem;
+  font-family: LeagueSpartanLight;
+  color: #222;
+
+  border-radius: 0.5rem;
+}
+
+.Gallery section.Introduction .Card .Title {
+  font-size: 1.5rem;
+  font-family: LeagueSpartanMedium;
+}
+
+.Gallery footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-family: LeagueSpartanLight;
+  color: #222;
 }
