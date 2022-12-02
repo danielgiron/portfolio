@@ -34,7 +34,7 @@ function ProjectDisplay(props) {
               scrollTo(macrosRef);
             }}
           >
-            <span>MacrOS</span>
+            <span>MacrOS — Macro Tracking App</span>
             <span className="arrow"></span>
           </button>
           <div className="ProjectBody">
@@ -55,7 +55,7 @@ function ProjectDisplay(props) {
               scrollTo(taskyRef);
             }}
           >
-            <span>Tasky</span>
+            <span>Tasky — Mini Social Network</span>
             <span className="arrow"></span>
           </button>
           <div className="ProjectBody">{<ProjectTasky />}</div>
@@ -74,7 +74,7 @@ function ProjectDisplay(props) {
               scrollTo(portfolioRef);
             }}
           >
-            <span>Portfolio</span>
+            <span>Portfolio — And Gallery</span>
             <span className="arrow"></span>
           </button>
           <div className="ProjectBody">This is my content for Portfolio!</div>
