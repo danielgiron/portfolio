@@ -1,8 +1,8 @@
 import Tasky1 from "./media/examples/Tasky1.png";
-import Tasky2 from "./media/examples/Tasky2.png";
-import Tasky3 from "./media/examples/Tasky3.png";
-import Tasky4 from "./media/examples/Tasky4.png";
-import Tasky5 from "./media/examples/Tasky5.png";
+import Tasky2 from "./media/examples/Tasky2.gif";
+import Tasky3 from "./media/examples/Tasky3.gif";
+import Tasky4 from "./media/examples/Tasky4.gif";
+import Tasky5 from "./media/examples/Tasky5.gif";
 import Tasky6 from "./media/examples/Tasky6.png";
 import Tasky7 from "./media/examples/Tasky7.png";
 
@@ -16,40 +16,42 @@ import Macros7 from "./media/examples/Macros7.png";
 
 export const taskySlides = [
   {
-    header: "Front Page",
+    header: "Sign Up or In",
     image: Tasky1,
-    caption: "Front page of Tasky Social Network",
+    caption: "(Click to expand images) Front page of Tasky Social Network",
   },
   {
-    header: "Tasks Page",
+    header: "Home Page",
     image: Tasky2,
-    caption: "Main page of Task displaying all of user's current tasks",
+    caption:
+      "Create new tasks for specific users with due dates right from the home page",
   },
   {
-    header: "Profile Page",
+    header: "User Profiles",
     image: Tasky3,
     caption:
-      "Each user has their own profile page from which contacts can message or send tasks from",
+      "Search for users and send them tasks or messages from their profiles!",
   },
   {
-    header: "Chat",
-    image: Tasky4,
-    caption: "Tasky users are able to have live chats with other users",
+    header: "Live Chat",
+    image: Tasky5,
+    caption: "Simple and familiar chat functionality available for all users",
   },
   {
     header: "Mobile Chat",
-    image: Tasky5,
-    caption: "The chat component looks great on mobile displays!",
-  },
-  {
-    header: "Chats",
     image: Tasky6,
-    caption: "A list of user's active chats ",
+    caption: "Live chat to go!",
   },
   {
     header: "Fully Responsive",
     image: Tasky7,
     caption: "The entire app has been mobile responsive!",
+  },
+  {
+    header: "Designed with UI/UX in Mind",
+    image: Tasky4,
+    caption:
+      "Easy to use and understand interface, like the state tracking settings page above",
   },
 ];
 
@@ -58,11 +60,6 @@ export const macrosSlides = [
     header: "Front Page",
     image: Macros1,
     caption: "Front page of Tasky Social Network",
-  },
-  {
-    header: "Tasks Page",
-    image: Macros2,
-    caption: "Main page of Task displaying all of user's current tasks",
   },
   {
     header: "Profile Page",
@@ -74,6 +71,11 @@ export const macrosSlides = [
     header: "Chat",
     image: Macros4,
     caption: "Tasky users are able to have live chats with other users",
+  },
+  {
+    header: "Tasks Page",
+    image: Macros2,
+    caption: "Main page of Task displaying all of user's current tasks",
   },
   {
     header: "Mobile Chat",
