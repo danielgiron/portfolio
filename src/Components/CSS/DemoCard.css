@@ -182,7 +182,7 @@
 @media (max-width: 1024px) {
   .DemoCard {
     grid-template-rows: 30px auto;
-    max-width: 100%;
+    width: 100%;
     margin: 0;
     margin-bottom: 1rem;
   }
