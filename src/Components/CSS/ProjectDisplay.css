@@ -13,6 +13,8 @@
   list-style: none;
 }
 
+/*//////////////////////////////////////////////////// Project Button */
+
 .Project {
   border: 1px solid white;
 }
@@ -49,10 +51,7 @@
   border-bottom: 1px solid white;
 }
 
-/* .Project:not(.Active) {
-  padding: 1rem;
-} */
-
+/*//////////////////////////////////////////////// Project Summary and Slides */
 .Project:not(.Active) .ProjectBody {
   display: none;
 }
@@ -63,4 +62,14 @@
 
 .Project ul {
   list-style-type: disc;
+}
+
+/*////////////////////////////////////////////// Paragraph, Header stylings, etc  */
+
+.Project .ProjectBody .Header {
+  margin-bottom: 1rem;
+}
+
+.Project .ProjectBody p + .Header {
+  margin-top: 50rem;
 }

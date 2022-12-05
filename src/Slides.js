@@ -18,7 +18,7 @@ export const macrosSlides = [
     header: "Nutritional Info Lookup",
     image: Macros1,
     caption:
-      "(Click images expand) Lookup nutritional info for your favorite foods and add them to your collection",
+      "(Click images expand) Lookup nutritional info for your favorite foods and save them to your collection",
   },
   {
     header: "Recipes",
@@ -30,7 +30,7 @@ export const macrosSlides = [
     header: "Tracker (Dashboard)",
     image: Macros3,
     caption:
-      "Add items to your daily food logs, and revisit previous entries and info",
+      "Add items to your daily food logs, set goals, and revisit previous log's info",
   },
   {
     header: "Mobile Friendly",
@@ -54,7 +54,7 @@ export const taskySlides = [
   {
     header: "Sign Up or In",
     image: Tasky1,
-    caption: "(Click to expand images) Front page of Tasky Social Network",
+    caption: "(Click to expand images) Front page of Tasky",
   },
   {
     header: "Home Page",
@@ -81,12 +81,12 @@ export const taskySlides = [
   {
     header: "Fully Responsive",
     image: Tasky7,
-    caption: "The entire app has been mobile responsive!",
+    caption: "The entire app has been made mobile-responsive!",
   },
   {
     header: "Designed with UI/UX in Mind",
     image: Tasky4,
     caption:
-      "Easy to use and understand interface, like the state tracking settings page above",
+      "Easy to understand interface, like the state-tracking settings page above",
   },
 ];

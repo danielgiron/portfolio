@@ -30,41 +30,45 @@ function ProjectTasky(props) {
           }
         )}
       </div>
-      <div className="Header">Project Summary</div>
-      <p>
-        Tasky is my version of a to-do list app if it were expanded to be more
-        of a social network. What began as a simple weekend project began
-        evolving into a weeks long marathon to see how much I was capable of
-        building without any tutorials using only what I know.
-      </p>
-      <p>
-        Having previously worked with Node and Express, I decided to create
-        backend functionality for Tasky that would allow for users to send tasks
-        to one another and monitor their progress. Once comfortable building the
-        backend API I was excited to find out how easily I could create a live
-        user search bar, live chat functionality, a notification system, and
-        more.
-      </p>
-      <div className="Header">What I Learned</div>
-      <p>
-        This project served really well in strengthening and expanding upon my
-        understanding of React. However, I used this opportunity to dabble with
-        Redux as well. Additionally, this project is where Node and Express
-        really clicked for me. I was able to take knowledge from previous
-        smaller projects and really make it my own.
-      </p>
-      <p>
-        Here's a brief list of some of the topics I learned or expanded upon in
-        this project:
-      </p>
-      <ul>
-        <li>Redux (State Management)</li>
-        <li>Building API's</li>
-        <li>Node with Express</li>
-        <li>Database Structuring</li>
-        <li>Database Querying</li>
-        <li>CSS Styling</li>
-      </ul>
+      <section>
+        <div className="Header">At A Glance</div>
+        <p>
+          Here's a brief list of some of the topics I learned or expanded upon
+          in this project:
+        </p>
+        <ul>
+          <li>Redux (State Management)</li>
+          <li>Building API's</li>
+          <li>Node with Express</li>
+          <li>Database Structuring</li>
+          <li>Database Querying</li>
+          <li>CSS Styling</li>
+        </ul>
+      </section>
+
+      <section>
+        <div className="Header">Project Summary</div>
+        <p>
+          Tasky is my version of a to-do list app if it were expanded to be more
+          of a social network. What began as a simple weekend project evolved
+          into a weeks long marathon to see how much I was capable of building
+          without any tutorials using only what I know.
+        </p>
+        <p>
+          Having previously worked with Node and Express, I decided to create
+          backend functionality for Tasky that would allow for users to send
+          tasks to one another and monitor their progress. Once comfortable
+          building the backend API, I was excited to find out how easily I could
+          create a search bar for user profiles with live results, live chat
+          functionality, a notification system, and more.
+        </p>
+        <p>
+          This project served really well in strengthening and expanding upon my
+          understanding of React. I used this opportunity to dabble with a bit
+          of Redux where I could. This project also helped me gain a better
+          understanding of Node.js and Express.
+        </p>
+      </section>
     </>
   );
 }
