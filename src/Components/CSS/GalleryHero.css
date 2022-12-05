@@ -3,13 +3,14 @@
   --grid-line-width: 2px;
 }
 
-/* @media (min-width: 1024px) { */
 .Gallery .Cover {
   background-image: url("../../media//gallery/images/galleryPhoto.png");
   background-size: cover;
   height: 85vh;
   min-height: unset;
 }
+
+/*/////////////////////////////////////////////////////////// Grid and Cells  */
 
 .Gallery .GridDecoration {
   width: 100vw;
@@ -123,6 +124,9 @@
   height: 25px;
   border: 2px solid var(--main-color);
 }
+
+/*////////////////////////////////////////// Header (Title + Display Font)  */
+
 .Gallery .Cover header {
   position: absolute;
   bottom: 0rem;
@@ -169,6 +173,8 @@
   font-size: 4rem !important;
 }
 
+/*/////////////////////////////////////////////////// Nav styling  */
+
 .Gallery nav {
   position: absolute;
   left: 0;
@@ -207,6 +213,8 @@
   font-family: LeagueSpartanMedium;
 }
 
+/*//////////////////////////////////////////////////////////// MOBILE  */
+
 @media (max-width: 1024px) {
   .Gallery .Cover {
     background-image: url("../../media//gallery/images/galleryPhoto.png");
@@ -216,8 +224,8 @@
 
   .Gallery .GridDecoration {
     height: 100%;
-    grid-template-columns: 2rem 1fr 2rem;
-    grid-template-rows: 2rem 1fr 2rem;
+    grid-template-columns: 2.5rem 1fr 2.5rem;
+    grid-template-rows: 2.5rem 1fr 2.5rem;
     background-color: rgba(0, 0, 0, 0.262);
   }
 
@@ -252,8 +260,8 @@
   }
 
   .Gallery .Cover header {
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    top: 6rem;
+    transform: translateX(-50%);
     width: calc(100vw - 0rem);
     padding: 0;
     background: unset;

@@ -109,28 +109,41 @@ a:active {
     align-items: center;
   }
 
+  .Gallery section.Introduction .Card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    padding: 3rem 2rem;
+
+    font-size: 1.2rem;
+    font-family: LeagueSpartanLight;
+    color: #222;
+
+    border-radius: 0.5rem;
+  }
+
   .Gallery section h2 {
     position: relative;
     top: unset;
     left: unset;
     transform: none;
 
-    width: 100%;
-    padding-top: 0.45rem;
-    padding-left: 1rem;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    padding-top: calc(0.5rem + 5px);
     margin-bottom: 1rem;
 
-    color: #6b6b6b;
-    font-size: 2rem;
-    text-align: left;
+    color: #dcdcdc;
+    font-size: 1.75rem;
+    text-align: center;
 
+    background-color: #2b2d2e;
+    filter: drop-shadow(0px 5px 15px #2b2d2e5a);
+    border-radius: 0.25rem;
     opacity: 1;
-    border-top: 1px solid #ffffff;
-    background: linear-gradient(
-      to left,
-      rgba(255, 255, 255, 0) 0%,
-      rgb(250, 250, 250) 40%
-    );
+
     /* border: 1px solid #222; */
   }
 }
