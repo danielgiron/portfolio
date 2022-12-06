@@ -261,7 +261,7 @@
 
   .Gallery .Cover header {
     top: 0rem !important;
-    transform: translateX(-50%);
+    transform: translateX(-50%) !important;
     width: calc(100vw - 0rem);
     padding: 0;
     background: unset;
