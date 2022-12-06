@@ -260,7 +260,7 @@
   }
 
   .Gallery .Cover header {
-    top: 6rem !important;
+    top: 0rem !important;
     transform: translateX(-50%);
     width: calc(100vw - 0rem);
     padding: 0;
