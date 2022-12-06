@@ -31,12 +31,9 @@
   filter: brightness(1.5);
 }
 
-.Mail.Op {
-  border: 1px solid white;
-  background-color: rgba(255, 255, 255, 0.501);
-}
-
-.Mail.Op:hover {
-  background-color: white;
-  color: grey;
+@media (max-width: 500px) {
+  .Mail {
+    width: 100%;
+    max-width: unset;
+  }
 }
