@@ -260,13 +260,12 @@
   }
 
   .Gallery .Cover header {
-    top: 1rem;
+    top: 6rem !important;
     transform: translateX(-50%);
     width: calc(100vw - 0rem);
     padding: 0;
     background: unset;
     z-index: 10;
-    pointer-events: none;
   }
 
   .Gallery .Cover .Display {
