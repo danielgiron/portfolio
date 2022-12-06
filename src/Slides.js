@@ -1,17 +1,21 @@
-import Tasky1 from "./media/examples/Tasky1.png";
-import Tasky2 from "./media/examples/Tasky2.gif";
-import Tasky3 from "./media/examples/Tasky3.gif";
-import Tasky4 from "./media/examples/Tasky4.gif";
-import Tasky5 from "./media/examples/Tasky5.gif";
-import Tasky6 from "./media/examples/Tasky6.png";
-import Tasky7 from "./media/examples/Tasky7.png";
+import Tasky1 from "./media/ProjectExamples/Tasky1.png";
+import Tasky2 from "./media/ProjectExamples/Tasky2.gif";
+import Tasky3 from "./media/ProjectExamples/Tasky3.gif";
+import Tasky4 from "./media/ProjectExamples/Tasky4.gif";
+import Tasky5 from "./media/ProjectExamples/Tasky5.gif";
+import Tasky6 from "./media/ProjectExamples/Tasky6.png";
+import Tasky7 from "./media/ProjectExamples/Tasky7.png";
 
-import Macros1 from "./media/examples/Macros1.gif";
-import Macros2 from "./media/examples/Macros2.gif";
-import Macros3 from "./media/examples/Macros3.gif";
-import Macros4 from "./media/examples/Macros4.png";
-import Macros5 from "./media/examples/Macros5.png";
-import Macros6 from "./media/examples/Macros6.png";
+import Macros1 from "./media/ProjectExamples/Macros1.gif";
+import Macros2 from "./media/ProjectExamples/Macros2.gif";
+import Macros3 from "./media/ProjectExamples/Macros3.gif";
+import Macros4 from "./media/ProjectExamples/Macros4.png";
+import Macros5 from "./media/ProjectExamples/Macros5.png";
+import Macros6 from "./media/ProjectExamples/Macros6.png";
+
+import Portfolio1 from "./media/ProjectExamples/Portfolio1.gif";
+import Portfolio2 from "./media/ProjectExamples/Portfolio2.png";
+import Portfolio3 from "./media/ProjectExamples/Portfolio3.png";
 
 export const macrosSlides = [
   {
@@ -88,5 +92,23 @@ export const taskySlides = [
     image: Tasky4,
     caption:
       "Easy to understand interface, like the state-tracking settings page above",
+  },
+];
+export const portfolioSlides = [
+  {
+    header: "Main Site",
+    image: Portfolio1,
+    caption: "(Click to expand images) Incorporated Three.js into my portfolio",
+  },
+  {
+    header: "Gallery",
+    image: Portfolio2,
+    caption:
+      "Personal gallery site showcasing related skills and minor projects",
+  },
+  {
+    header: "Relevant Hobbies",
+    image: Portfolio3,
+    caption: "More entries being added soon!",
   },
 ];

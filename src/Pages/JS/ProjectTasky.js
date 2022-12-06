@@ -39,7 +39,7 @@ function ProjectTasky(props) {
         <ul>
           <li>Redux (State Management)</li>
           <li>Building API's</li>
-          <li>Node with Express</li>
+          <li>Node.js with Express</li>
           <li>Database Structuring</li>
           <li>Database Querying</li>
           <li>CSS Styling</li>
@@ -65,8 +65,8 @@ function ProjectTasky(props) {
         <p>
           This project served really well in strengthening and expanding upon my
           understanding of React. I used this opportunity to dabble with a bit
-          of Redux where I could. This project also helped me gain a better
-          understanding of Node.js and Express.
+          of Redux where I could. This project also helped me gain a much better
+          handle of Node.js and Express.
         </p>
       </section>
     </>

@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
-// import "../CSS/ProjectDisplay.css";
 import "../Components/CSS/ProjectDisplay.css";
 
 import ProjectMacros from "../Pages/JS/ProjectMacros";
 import ProjectTasky from "../Pages/JS/ProjectTasky";
+import ProjectPortfolio from "../Pages/JS/ProjectPortfolio";
 
 function ProjectDisplay(props) {
   const [activeProject, setActiveProject] = useState("unset");
@@ -77,7 +77,9 @@ function ProjectDisplay(props) {
             <span>Portfolio — And Gallery</span>
             <span className="arrow"></span>
           </button>
-          <div className="ProjectBody">This is my content for Portfolio!</div>
+          <div className="ProjectBody">
+            <ProjectPortfolio />
+          </div>
         </li>
       </ul>
     </div>
