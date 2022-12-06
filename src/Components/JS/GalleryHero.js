@@ -1,21 +1,9 @@
-// import GalleryBackdrop from "../../media/gallery/images/galleryPhoto.png";
-import { useEffect } from "react";
 import Logo from "../../media/gallery/images/logo192.png";
 import "../CSS/GalleryHero.css";
 
 function GalleryHero(props) {
-  let RenderSection;
-  let CssHtmlSection;
-  let ComponentsSection;
-
-  useEffect(() => {
-    RenderSection = document.getElementById("Renders");
-    CssHtmlSection = document.getElementById("CSSHTML");
-    ComponentsSection = document.getElementById("Components");
-  }, []);
-
-  function scrollToSection(element) {
-    element.scrollIntoView({ behavior: "smooth" });
+  function scrollToSection(section) {
+    document.getElementById(section).scrollIntoView({ behavior: "smooth" });
   }
 
   return (
@@ -63,7 +51,7 @@ function GalleryHero(props) {
               <a
                 className="GalleryLi"
                 onClick={() => {
-                  scrollToSection(ComponentsSection);
+                  scrollToSection("Components");
                 }}
               >
                 Components
@@ -71,7 +59,7 @@ function GalleryHero(props) {
               <a
                 className="GalleryLi"
                 onClick={() => {
-                  scrollToSection(CssHtmlSection);
+                  scrollToSection("CSSHTML");
                 }}
               >
                 CSS/HTML
@@ -79,7 +67,7 @@ function GalleryHero(props) {
               <a
                 className="GalleryLi"
                 onClick={() => {
-                  scrollToSection(RenderSection);
+                  scrollToSection("Renders");
                 }}
               >
                 Renders
