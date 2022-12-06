@@ -51,10 +51,15 @@ function ProjectMacros(props) {
           equally fun journey getting familiar with what I could do with this
           technology in my tool kit. React aside, the biggest challenge was all
           the data there was to handle, and then synthesizing new data from it.
-          {/* There was a lot of manual testing and re-testing of code I had to do,
-        but I now know the importance and handiness of tools like Jasmine for
-        future projects. */}
         </p>
+        <button
+          onClick={() => {
+            window.location.href = "https://macrosapp.netlify.app";
+          }}
+          className="Launch"
+        >
+          Launch MacrOS
+        </button>
       </section>
     </>
   );

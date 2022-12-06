@@ -31,25 +31,19 @@ function ProjectPortfolio(props) {
       <section>
         <div className="Header">Project Summary</div>
         <p>
-          Tasky is my version of a to-do list app if it were expanded to be more
-          of a social network. What began as a simple weekend project evolved
-          into a weeks long marathon to see how much I was capable of building
-          without any tutorials using only what I know.
+          This is my portfolio site! This is where I wanted to some time and
+          develop my own style using what I have learned so far. I've added a
+          small gallery section so I may showcase future pieces of mine as I
+          grow as a developer.
         </p>
-        <p>
-          Having previously worked with Node and Express, I decided to create
-          backend functionality for Tasky that would allow for users to send
-          tasks to one another and monitor their progress. Once comfortable
-          building the backend API, I was excited to find out how easily I could
-          create a search bar for user profiles with live results, live chat
-          functionality, a notification system, and more.
-        </p>
-        <p>
-          This project served really well in strengthening and expanding upon my
-          understanding of React. I used this opportunity to dabble with a bit
-          of Redux where I could. This project also helped me gain a better
-          understanding of Node.js and Express.
-        </p>
+        <button
+          onClick={() => {
+            window.location.href = "https://www.baldwingiron.com/gallery";
+          }}
+          className="Launch"
+        >
+          Visit Gallery
+        </button>
       </section>
     </>
   );

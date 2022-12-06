@@ -68,6 +68,19 @@ function ProjectTasky(props) {
           of Redux where I could. This project also helped me gain a much better
           handle of Node.js and Express.
         </p>
+
+        <div className="Note">
+          Tasky is hosted on Heroku's Hobby tier—please allow a few seconds for
+          Heroku's dyno system to spin up and load the backend API
+        </div>
+        <button
+          onClick={() => {
+            window.location.href = "https://taskysocialnetwork.netlify.app";
+          }}
+          className="Launch"
+        >
+          Launch Tasky
+        </button>
       </section>
     </>
   );

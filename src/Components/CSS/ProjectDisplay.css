@@ -73,3 +73,24 @@
 .Project .ProjectBody p + .Header {
   margin-top: 50rem;
 }
+
+/*//////////////////////////////////////////////* Launch Button */
+
+.ProjectDisplay .Note {
+  background-color: #ecf3f6be;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0rem;
+  font-style: italic;
+}
+
+.ProjectDisplay button.Launch {
+  background-color: #d8dfe1;
+  border: 1px solid #e6eef0;
+  display: flex;
+  justify-content: center;
+}
+
+.ProjectDisplay button.Launch:hover {
+  filter: brightness(0.9);
+}
