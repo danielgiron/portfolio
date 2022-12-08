@@ -81,18 +81,6 @@ function Projects(props) {
 
         <ProjectDisplay />
       </section>
-      <section>
-        <div className="Header SlideElem">The Future</div>
-        <p>
-          In the future I plan on learning more or working on the following:
-        </p>
-        <ul>
-          <li>Jasmine</li>
-          <li>CSS Preprocessors</li>
-          <li>Open Source Projects + Contributions</li>
-          <li>More on Three.js</li>
-        </ul>
-      </section>
     </motion.div>
   );
 }
