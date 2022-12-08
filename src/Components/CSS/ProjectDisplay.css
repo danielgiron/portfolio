@@ -77,6 +77,7 @@
 /*//////////////////////////////////////////////* Launch Button */
 
 .ProjectDisplay .Note {
+  border: 1px solid white;
   background-color: #ecf3f6be;
   font-size: 1.1rem;
   padding: 0.5rem;
@@ -85,12 +86,13 @@
 }
 
 .ProjectDisplay button.Launch {
-  background-color: #d8dfe1;
-  border: 1px solid #e6eef0;
+  background-color: #222;
+  /* border: 1px solid #e6eef0; */
+  color: white;
   display: flex;
   justify-content: center;
 }
 
 .ProjectDisplay button.Launch:hover {
-  filter: brightness(0.9);
+  filter: brightness(1.2);
 }
