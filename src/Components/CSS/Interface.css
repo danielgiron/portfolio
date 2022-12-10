@@ -200,6 +200,7 @@
   box-sizing: border-box;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
+  padding-bottom: 5rem;
 }
 
 .PageContent nav {
