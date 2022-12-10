@@ -36,7 +36,8 @@ function Gallery(props) {
               This is a space I created to showcase some of my smaller projects
               and related future creations. For more info on an entry, please
               feel free to reach out using the contact link above. Thanks for
-              stopping by!
+              stopping by! (This page a currently a work in progress, come back
+              soon for more additions!)
             </div>
           </div>
         </section>
