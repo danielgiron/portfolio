@@ -77,7 +77,7 @@ function Projects(props) {
           Listed in chronological order, here are some of the larger and more
           significant projects that I have designed and developed.
         </p>
-        <p>Spoiler alert—this portfolio site is third on the list</p>
+        <p>Spoiler alert—this portfolio site is third on the list.</p>
 
         <ProjectDisplay />
       </section>
