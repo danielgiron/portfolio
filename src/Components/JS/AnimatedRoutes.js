@@ -8,6 +8,7 @@ import About from "../../Pages/JS/About";
 import Contact from "../../Pages/JS/Contact";
 import Projects from "../../Pages/JS/Projects";
 import Gallery from "../../Pages/JS/Gallery";
+import NotFound from "./NotFound";
 
 function AnimatedRoutes(props) {
   return (
@@ -20,6 +21,7 @@ function AnimatedRoutes(props) {
           <Route path="/projects" element={<Projects />}></Route>
         </Route>
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
   );
