@@ -56,9 +56,9 @@ function Projects(props) {
       <section>
         <div className="Header SlideElem">Tech Stack</div>
         <p className="SlideElem">
-          I've picked up a few tips and tricks along the way on my journey to
-          become a web developer. Immediately below are some of the technologies
-          I have worked with so far.
+          I've picked up a few skills along the way on my journey as a full
+          stack web developer. Here are some of the technologies I have worked
+          with so far:
         </p>
         <div className="Technologies SlideElem">
           {allIcons.map((tech) => {
@@ -74,10 +74,10 @@ function Projects(props) {
       <section>
         <div className="Header SlideElem">The Projects</div>
         <p className="SlideElem">
-          Listed in chronological order, here are the larger and significant
-          projects that I have—just about—completed thus far.
+          Listed in chronological order, here are some of the larger and more
+          significant projects that I have designed and developed.
         </p>
-        <p>(Spoiler alert, this portfolio site is the last on the list)</p>
+        <p>Spoiler alert—this portfolio site is third on the list</p>
 
         <ProjectDisplay />
       </section>
