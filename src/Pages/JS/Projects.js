@@ -80,6 +80,15 @@ function Projects(props) {
         <p>Spoiler alert—this portfolio site is third on the list.</p>
 
         <ProjectDisplay />
+        <p>For more on the code, visit my Github page linked below</p>
+        <a
+          onClick={() => {
+            window.location.href =
+              "https://github.com/danielgiron?tab=repositories";
+          }}
+        >
+          <span /> Open Github
+        </a>
       </section>
     </motion.div>
   );

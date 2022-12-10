@@ -46,3 +46,23 @@
   padding: 0.3rem;
   filter: brightness(0) grayscale(1);
 }
+
+.Projects a {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.25rem 1rem;
+  color: #eee !important;
+  background-color: #222;
+  width: max-content;
+  margin-bottom: 1.5rem;
+}
+
+.Projects a span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  rotate: 45deg;
+}
