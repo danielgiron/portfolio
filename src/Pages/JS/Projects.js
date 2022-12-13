@@ -82,6 +82,7 @@ function Projects(props) {
         <ProjectDisplay />
         <p>For more on the code, visit my Github page linked below</p>
         <a
+          className="ExternalLink"
           onClick={() => {
             window.location.href =
               "https://github.com/danielgiron?tab=repositories";
