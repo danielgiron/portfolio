@@ -33,11 +33,16 @@ function Gallery(props) {
           <div className="Card">
             <div className="Title">Welcome to my gallery!</div>
             <div className="Body">
-              This is a space I created to showcase some of my smaller projects
-              and related future creations. For more info on an entry, please
-              feel free to reach out using the contact link above. Thanks for
-              stopping by! (This page a currently a work in progress, come back
-              soon for more additions!)
+              <p>
+                This is a space I created to showcase some of my smaller
+                projects and related future creations. For more info on an
+                entry, please feel free to reach out using the contact link
+                above. Thanks for stopping by!
+              </p>
+              <p>
+                (This page is currently a work in progress, come back soon for
+                more additions!)
+              </p>
             </div>
           </div>
         </section>
