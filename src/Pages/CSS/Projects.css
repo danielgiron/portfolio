@@ -53,11 +53,12 @@
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  padding: 0.25rem 1rem;
+  padding: calc(0.25rem + 2px) 1rem 0.25rem 1rem;
   color: #eee !important;
   background-color: #222;
   width: max-content;
   margin-bottom: 1.5rem;
+  cursor: pointer;
 }
 
 .Projects a.ExternalLink span {

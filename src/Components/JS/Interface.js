@@ -69,9 +69,9 @@ function Interface(props) {
             <Typewriter
               options={{
                 strings: [
-                  "Fullstack Developer",
+                  "Full Stack Developer",
+                  "Software Developer",
                   "Cat Enthusiast",
-                  "Miscellaneous Hobbyist",
                 ],
                 autoStart: true,
                 loop: true,
