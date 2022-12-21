@@ -4,6 +4,7 @@ import Logo from "../../media/gallery/images/logo192.png";
 import "../CSS/GalleryTopNav.css";
 
 function GalleryTopNav(props) {
+  const origin = window.location.origin;
   let RenderSection;
   let CssHtmlSection;
   let ComponentsSection;
@@ -27,10 +28,10 @@ function GalleryTopNav(props) {
       <nav>
         <div className="Main">
           <img src={Logo} />
-          <a href="https://www.baldwingiron.com/home">Home</a>
-          <a href="https://www.baldwingiron.com/about">About</a>
-          <a href="https://www.baldwingiron.com/projects">Projects</a>
-          <a href="https://www.baldwingiron.com/contact">Contact</a>
+          <a href={`${origin}/home`}>Home</a>
+          <a href={`${origin}/about`}>About</a>
+          <a href={`${origin}/projects`}>Projects</a>
+          <a href={`${origin}/contact`}>Contact</a>
         </div>
         <div className="Here">
           <a

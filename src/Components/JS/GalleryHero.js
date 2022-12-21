@@ -2,6 +2,7 @@ import Logo from "../../media/gallery/images/logo192.png";
 import "../CSS/GalleryHero.css";
 
 function GalleryHero(props) {
+  const origin = window.location.origin;
   function scrollToSection(section) {
     document.getElementById(section).scrollIntoView({ behavior: "smooth" });
   }
@@ -28,24 +29,21 @@ function GalleryHero(props) {
               src={Logo}
               alt="Logo"
               onClick={() => {
-                window.location.href = "https://www.baldwingiron.com/home";
+                window.location.href = `${origin}/home`;
               }}
             />
 
             <nav>
-              <a className="MainLi" href="https://www.baldwingiron.com/home">
+              <a className="MainLi" href={`${origin}/home`}>
                 Home
               </a>
-              <a className="MainLi" href="https://www.baldwingiron.com/about">
+              <a className="MainLi" href={`${origin}/about`}>
                 About
               </a>
-              <a
-                className="MainLi"
-                href="https://www.baldwingiron.com/projects"
-              >
+              <a className="MainLi" href={`${origin}/projects`}>
                 Projects
               </a>
-              <a className="MainLi" href="https://www.baldwingiron.com/contact">
+              <a className="MainLi" href={`${origin}/contact`}>
                 Contact
               </a>
               <a

@@ -38,7 +38,7 @@ function ProjectPortfolio(props) {
         </p>
         <button
           onClick={() => {
-            window.location.href = "https://www.baldwingiron.com/gallery";
+            window.location.href = `${window.location.origin}/gallery`;
           }}
           className="Launch"
         >

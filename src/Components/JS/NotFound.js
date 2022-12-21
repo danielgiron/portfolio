@@ -10,7 +10,7 @@ function NotFound(props) {
       </div>
       <button
         onClick={() => {
-          window.location.href = "https://www.baldwingiron.com/home";
+          window.location.href = `${window.location.origin}/home`;
         }}
       >
         <div /> Back to Home

@@ -34,7 +34,7 @@ function Home(props) {
           and related files to entries available to everyone soon! In the
           meantime, feel free to shoot me a message from the contact page.
         </p>
-        <a href="https://www.baldwingiron.com/gallery">Visit Gallery</a>
+        <a href={`${window.location.origin}/gallery`}>Visit Gallery</a>
       </section>
     </motion.div>
   );
