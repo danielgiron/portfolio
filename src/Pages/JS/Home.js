@@ -16,17 +16,16 @@ function Home(props) {
         <div className="Header">Getting started... Welcome!</div>
         <p>
           Hi there! My name is Baldwin (Daniel) Giron. This is the portfolio
-          site I have put together to showcase some of my work and skills in web
-          development.
+          site I have put together to showcase some of my work and skills in
+          software and full stack web development.
         </p>
         <p>
-          To read a little bit more about me or my technical skills, head over
-          to the "About" and "Projects" pages respectively.
+          To read a little more about me or my technical skills, head over to
+          the "About" and "Projects" pages respectively.
         </p>
         <p>
-          If you have an idea for a project you would like to work on with me, I
-          would be thrilled if you reach out from the form in the "Contact"
-          page!
+          Have an idea for a project you'd like to work on together? Shoot me a
+          message via the "Contact" page!
         </p>
         <p>
           I also have a growing gallery collection, linked below, where you can

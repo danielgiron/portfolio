@@ -35,9 +35,9 @@ function About(props) {
         <p>
           I graduated from Syracuse University, earning a B.S. in Computer
           Science. I was able to explore different areas in CS, ultimately
-          deciding Full Stack Development is what appeals to me most; I get to
-          work on more functional code in the backend, while working on visual
-          elements and design in the frontend.
+          deciding Full Stack Software Development is what appeals to me most; I
+          get to work on more functional code in the backend, while working on
+          visual elements and design in the frontend.
         </p>
       </section>
     </motion.div>

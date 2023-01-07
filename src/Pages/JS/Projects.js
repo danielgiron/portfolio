@@ -56,7 +56,7 @@ function Projects(props) {
       <section>
         <div className="Header SlideElem">Tech Stack</div>
         <p className="SlideElem">
-          I've picked up a few skills along the way on my journey as a full
+          I've picked up a few skills along the way on my journeys as a full
           stack web developer. Here are some of the technologies I have worked
           with so far:
         </p>
@@ -77,10 +77,9 @@ function Projects(props) {
           Listed in chronological order, here are some of the larger and more
           significant projects that I have designed and developed.
         </p>
-        <p>Spoiler alert—this portfolio site is third on the list.</p>
 
         <ProjectDisplay />
-        <p>For more on the code, visit my Github page linked below</p>
+        <p>For more on the code, visit my GitHub page linked below</p>
         <a
           className="ExternalLink"
           onClick={() => {
@@ -88,7 +87,7 @@ function Projects(props) {
               "https://github.com/danielgiron?tab=repositories";
           }}
         >
-          <span /> Open Github
+          <span /> Open GitHub
         </a>
       </section>
     </motion.div>
