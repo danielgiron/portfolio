@@ -11,8 +11,8 @@ function DemoCard(props) {
         src={img}
         key={index}
         alt={`Thumbnail ${index}`}
-        // open expanded image in new tab
         onClick={() => {
+          // open expanded image in new tab
           window.open(img);
         }}
       />
@@ -22,6 +22,7 @@ function DemoCard(props) {
     return <span key={index}>{tag}</span>;
   });
 
+  ////////////////////////////////////////// Possible view states for DemoCards
   const AboutView = (
     <div className={`View`} id="View1">
       <div className="TextContainer">
@@ -57,6 +58,7 @@ function DemoCard(props) {
     </div>
   );
 
+  // Return appropriate view as determined by user's selected view state
   function returnView() {
     if (Index === 1) {
       return AboutView;

@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 function Nav(props) {
-  // const { page, setPage, scrollToPage } = props;
   const { scrollToPage } = props;
   const navigate = useNavigate();
   const location = useLocation();
@@ -37,7 +36,6 @@ function Nav(props) {
       <button
         className={`${path === "/projects" ? "Active" : ""}`}
         onClick={() => {
-          // setPage("projects");
           navigate("/projects");
           setTimeout(() => {
             scrollToPage();

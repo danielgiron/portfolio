@@ -1,3 +1,5 @@
+// Theme info for use in App.js
+
 export const blankTheme = {
   name: "this",
   ambientLight_color: "#adcfe6",

@@ -6,6 +6,7 @@ import { blankTheme, macrosTheme, taskyTheme } from "./Themes";
 import "./App.css";
 
 function App() {
+  // Set default path location to /home
   if (window.location.pathname === "/") {
     window.location.pathname = "/home";
   }

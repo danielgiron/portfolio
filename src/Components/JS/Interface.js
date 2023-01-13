@@ -26,9 +26,11 @@ function Interface(props) {
         setYPos(e.clientY);
       };
     }
+    // Shifting Three.js Fiber canvas for legibility purposes
     shiftTorusOnScroll();
   }, []);
 
+  // Pulling theme data from Parent props (original source: ../../Themes.js)
   const colorSwatch = [theme.ambientLight_color, theme.fog_color];
   theme.pointLights.map((light) => {
     colorSwatch.push(light.color);
