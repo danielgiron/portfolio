@@ -16,11 +16,9 @@ import {
   express,
   java,
   spring,
-  npm,
   github,
   mongo,
   heroku,
-  netlify,
   bootstrap,
   threejs,
 } from "../../media/icons/techObjs";
@@ -36,11 +34,9 @@ function Projects(props) {
     express,
     java,
     spring,
-    npm,
     github,
     mongo,
     heroku,
-    netlify,
     bootstrap,
     threejs,
   ];
