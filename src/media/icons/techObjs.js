@@ -12,6 +12,8 @@ import herokuSVG from "./heroku.svg";
 import netlifySVG from "./netlify.svg";
 import threejsSVG from "./threedotjs.svg";
 import bootstrapSVG from "./bootstrap.svg";
+import springSVG from "./spring.svg";
+import javaSVG from "./java.svg";
 
 export const react = {
   svg: reactSVG,
@@ -72,15 +74,25 @@ export const bootstrap = {
   svg: bootstrapSVG,
   name: "Bootstrap",
 };
+export const spring = {
+  svg: springSVG,
+  name: "Spring",
+};
+export const java = {
+  svg: javaSVG,
+  name: "Java",
+};
 
 export const icons = {
   html,
   css,
   javascript,
+  java,
   react,
-  node,
   redux,
+  node,
   express,
+  spring,
   npm,
   github,
   mongo,
